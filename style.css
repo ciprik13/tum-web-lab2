@@ -239,7 +239,6 @@ body {
     transition: var(--transition);
 }
 
-/* Stiluri Generale Secțiuni (Adaugă după stilurile Hero) */
 .section {
     padding: 100px 0;
 }
@@ -266,7 +265,6 @@ body {
     line-height: 1.2;
 }
 
-/* About Section Specifics */
 .about-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -305,7 +303,6 @@ body {
     color: var(--accent-dark);
 }
 
-/* Stat Cards */
 .stat-card {
     background: var(--bg);
     padding: 28px;
@@ -334,4 +331,88 @@ body {
     justify-content: center;
     flex-shrink: 0;
     color: var(--accent);
+}
+
+.section-alt {
+    background: var(--bg-alt);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: var(--bg);
+    padding: 36px 28px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, rgba(240, 185, 11, 0.1), rgba(240, 185, 11, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: var(--accent-dark);
+    transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+.service-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+    transition: var(--transition);
+    display: inline-block;
+    margin-top: 20px;
 }
