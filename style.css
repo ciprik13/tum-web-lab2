@@ -1,0 +1,45 @@
+:root {
+    /* Paleta de culori */
+    --primary: #0f1d35;
+    --primary-light: #1a2d4d;
+    --primary-dark: #0a1425;
+    --accent: #f0b90b;
+    --accent-light: #ffd54f;
+    --accent-dark: #c99700;
+    --text: #2d3748;
+    --text-light: #718096;
+    --text-lighter: #a0aec0;
+    --bg: #ffffff;
+    --bg-alt: #f7f8fc;
+    --bg-dark: #0f1d35;
+    --border: #e2e8f0;
+
+    /* Design tokens */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 14px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.1);
+    --shadow-xl: 0 20px 60px rgba(0,0,0,0.12);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --max-width: 1200px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
