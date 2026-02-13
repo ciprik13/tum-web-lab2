@@ -984,6 +984,10 @@ body {
     transform: translateX(4px);
 }
 
+.contact-card:hover .schedule-toggle {
+    color: var(--accent) !important;
+}
+
 .contact-icon {
     width: 44px;
     height: 44px;
@@ -1010,6 +1014,10 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.contact-card p a:hover {
+    color: var(--accent) !important;
+}
+
 .contact-form {
     background: var(--bg);
     padding: 36px;
@@ -1028,6 +1036,16 @@ body {
 .contact-form textarea {
     flex: 1;
     min-height: 80px;
+}
+
+a.contact-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.contact-card:hover p {
+    color: var(--accent) !important;
 }
 
 .form-row {
@@ -1073,6 +1091,89 @@ body {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: var(--text-lighter);
+}
+
+.schedule-wrapper {
+    position: relative;
+}
+
+.schedule-toggle {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+
+.schedule-toggle:hover {
+    color: var(--accent) !important;
+}
+
+.schedule-toggle svg {
+    transition: transform 0.3s;
+}
+
+.schedule-wrapper.active .schedule-toggle svg {
+    transform: rotate(180deg);
+}
+
+.schedule-popup {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 0;
+    background: var(--primary-light);
+    border: 1px solid rgba(240, 185, 11, 0.2);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    min-width: 240px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-wrapper.active .schedule-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.schedule-popup::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 24px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-light);
+    border-right: 1px solid rgba(240, 185, 11, 0.2);
+    border-bottom: 1px solid rgba(240, 185, 11, 0.2);
+    transform: rotate(45deg);
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.schedule-open {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.schedule-closed {
+    color: #e53e3e;
+    font-weight: 600;
 }
 
 .full-width {
