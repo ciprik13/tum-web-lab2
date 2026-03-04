@@ -679,7 +679,7 @@ html {
 
 @media (max-width: 480px) {
   .mascot-container {
-    bottom: 16px;
+    bottom: 80px;
     right: 16px;
   }
   .mascot-figure {
@@ -690,5 +690,40 @@ html {
     max-width: 220px;
     right: -10px;
     font-size: 0.85rem;
+  }
+}
+
+/* ==============================
+   MOBILE-ONLY: Service cards
+   ============================== */
+.mobile-service-card {
+  min-height: 100px;
+}
+.mobile-service-card:active {
+  transform: scale(0.97);
+  border-color: #f0b90b;
+}
+
+/* ==============================
+   MOBILE-ONLY: Sticky CTA — offset mascot & add padding to footer
+   ============================== */
+@media (max-width: 767px) {
+  .mascot-container {
+    bottom: 80px;
+  }
+  body {
+    padding-bottom: 72px;
+  }
+  .mobile-sticky-cta {
+    animation: slideUpCta 0.5s ease forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+@keyframes slideUpCta {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
