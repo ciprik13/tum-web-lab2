@@ -528,3 +528,167 @@ html {
     gap: 40px;
   }
 }
+
+/* ==============================
+   MASCOT — Construction Worker (Clippy-style)
+   ============================== */
+@keyframes mascot-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-18px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  70% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes mascot-wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes mascot-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.05);
+  }
+  80% {
+    transform: translateY(4px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.mascot-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.mascot-container.visible {
+  opacity: 1;
+  pointer-events: auto;
+  animation: mascot-enter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.mascot-figure {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
+  transition: filter 0.3s ease;
+  animation: mascot-bounce 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.mascot-figure:hover {
+  filter: drop-shadow(0 8px 30px rgba(240, 185, 11, 0.4));
+  animation: mascot-wave 1.2s ease-in-out;
+}
+
+/* Speech bubble */
+.mascot-bubble {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  background: #fff;
+  border: 2px solid #f0b90b;
+  border-radius: 16px;
+  padding: 14px 18px;
+  min-width: 220px;
+  max-width: 260px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px) scale(0.95);
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+}
+.mascot-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  right: 36px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-right: 2px solid #f0b90b;
+  border-bottom: 2px solid #f0b90b;
+  transform: rotate(45deg);
+}
+.mascot-container:hover .mascot-bubble,
+.mascot-container.show-bubble .mascot-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.mascot-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  background: #0f1d35;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+.mascot-close:hover {
+  background: #f0b90b;
+  color: #0f1d35;
+  transform: scale(1.15);
+}
+
+@media (max-width: 480px) {
+  .mascot-container {
+    bottom: 16px;
+    right: 16px;
+  }
+  .mascot-figure {
+    width: 75px;
+  }
+  .mascot-bubble {
+    min-width: 180px;
+    max-width: 220px;
+    right: -10px;
+    font-size: 0.85rem;
+  }
+}

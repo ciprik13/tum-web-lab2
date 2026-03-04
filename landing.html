@@ -14,7 +14,6 @@
     />
   </head>
   <body class="font-inter text-slate-700 bg-white overflow-x-hidden">
-    <!-- ==================== NAVBAR ==================== -->
     <header
       class="navbar fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3 transition-all duration-300"
       id="navbar"
@@ -119,7 +118,6 @@
       </div>
     </header>
 
-    <!-- ==================== HERO ==================== -->
     <section
       id="hero"
       class="relative min-h-screen flex items-center justify-center overflow-hidden pt-[120px] pb-20"
@@ -304,7 +302,6 @@
       </div>
     </section>
 
-    <!-- ==================== DESPRE NOI ==================== -->
     <section id="despre" class="py-[100px] max-md:py-[60px]">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -485,7 +482,6 @@
       </div>
     </section>
 
-    <!-- ==================== SERVICII ==================== -->
     <section id="servicii" class="py-[100px] max-md:py-[60px] bg-bg-alt">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -735,7 +731,6 @@
       </div>
     </section>
 
-    <!-- ==================== DETAILED SERVICES ==================== -->
     <section class="py-[100px] max-md:py-[60px]">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -881,7 +876,6 @@
       </div>
     </section>
 
-    <!-- ==================== CUM LUCRĂM ==================== -->
     <section id="proces" class="py-[100px] max-md:py-[60px] bg-primary">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -1099,7 +1093,6 @@
       </div>
     </section>
 
-    <!-- ==================== AVANTAJE ==================== -->
     <section id="avantaje" class="py-[100px] max-md:py-[60px] bg-bg-alt">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -1304,7 +1297,6 @@
       </div>
     </section>
 
-    <!-- ==================== PROIECTE / TESTIMONIALE ==================== -->
     <section id="proiecte" class="py-[100px] max-md:py-[60px]">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -1649,7 +1641,6 @@
       </div>
     </section>
 
-    <!-- ==================== CLIENȚI ==================== -->
     <section class="py-20 max-md:py-[60px] bg-bg-alt overflow-hidden">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -1793,7 +1784,6 @@
       </div>
     </section>
 
-    <!-- ==================== CTA BANNER ==================== -->
     <section
       class="cta-banner relative overflow-hidden min-h-[500px] flex items-center"
     >
@@ -1855,7 +1845,6 @@
       </div>
     </section>
 
-    <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="py-[100px] max-md:py-[60px] bg-primary">
       <div class="max-w-[1200px] mx-auto px-6">
         <div class="text-center mb-[60px] animate-on-scroll">
@@ -2207,7 +2196,6 @@
       </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer class="bg-[#0a1020] text-white/60 pt-[60px]">
       <div class="max-w-[1200px] mx-auto px-6">
         <div
@@ -2386,7 +2374,6 @@
       </div>
     </footer>
 
-    <!-- ==================== SCRIPTS ==================== -->
     <script>
       document.getElementById("currentYear").textContent =
         new Date().getFullYear();
@@ -2580,6 +2567,66 @@
           scheduleWrapper.classList.remove("active");
         }
       });
+
+      (function () {
+        const mascotMessages = [
+          "👷 Salut! Ai nevoie de o construcție solidă? Suntem aici!",
+          "🏗️ Peste 200 de proiecte finalizate! Solicită o ofertă gratuită.",
+          "📞 Sună-ne la +373 69 570 971 pentru o consultație!",
+          "🔨 De la fundație la acoperiș — facem totul la cheie!",
+          "⭐ 15+ ani de experiență în construcții industriale.",
+        ];
+
+        const mascotContainer = document.createElement("div");
+        mascotContainer.className = "mascot-container";
+        mascotContainer.innerHTML = `
+          <div class="mascot-bubble">
+            <button class="mascot-close" aria-label="Închide">✕</button>
+            <p class="text-sm font-semibold text-primary leading-relaxed m-0" id="mascot-message">
+              ${mascotMessages[0]}
+            </p>
+          </div>
+          <img src="assets/mascot.png" alt="Mascota Darion-Nord — Muncitor constructor" class="mascot-figure" />
+        `;
+        document.body.appendChild(mascotContainer);
+
+        // Show mascot after 3 seconds
+        setTimeout(() => {
+          mascotContainer.classList.add("visible");
+
+          // Auto-show first bubble after 4.5s
+          setTimeout(() => {
+            mascotContainer.classList.add("show-bubble");
+            // Auto-hide bubble after 6s
+            setTimeout(() => {
+              mascotContainer.classList.remove("show-bubble");
+            }, 6000);
+          }, 1500);
+        }, 3000);
+
+        // Rotate messages on each hover
+        let msgIndex = 0;
+        const msgEl = mascotContainer.querySelector("#mascot-message");
+        const mascotImg = mascotContainer.querySelector(".mascot-figure");
+
+        mascotImg.addEventListener("mouseenter", () => {
+          msgIndex = (msgIndex + 1) % mascotMessages.length;
+          msgEl.textContent = mascotMessages[msgIndex];
+        });
+
+        // Close button hides bubble
+        mascotContainer
+          .querySelector(".mascot-close")
+          .addEventListener("click", (e) => {
+            e.stopPropagation();
+            mascotContainer.classList.remove("show-bubble");
+          });
+
+        // Click mascot to toggle bubble
+        mascotImg.addEventListener("click", () => {
+          mascotContainer.classList.toggle("show-bubble");
+        });
+      })();
     </script>
   </body>
 </html>
