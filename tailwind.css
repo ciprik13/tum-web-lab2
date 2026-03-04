@@ -529,9 +529,6 @@ html {
   }
 }
 
-/* ==============================
-   MASCOT — Construction Worker (Clippy-style)
-   ============================== */
 @keyframes mascot-bounce {
   0%,
   100% {
@@ -586,19 +583,53 @@ html {
   }
 }
 
+/* Auto-show bubble then hide it */
+@keyframes bubble-auto-show {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px) scale(0.95);
+  }
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px) scale(0.95);
+  }
+}
+
+/* Hidden checkbox that controls bubble toggle */
+.mascot-checkbox {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
 .mascot-container {
   position: fixed;
   bottom: 24px;
   right: 24px;
   z-index: 9999;
+  /* Appear after 3s delay */
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.mascot-container.visible {
-  opacity: 1;
-  pointer-events: auto;
   animation: mascot-enter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 3s;
+}
+
+.mascot-figure-label {
+  display: block;
+  cursor: pointer;
 }
 
 .mascot-figure {
@@ -608,14 +639,14 @@ html {
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
   transition: filter 0.3s ease;
   animation: mascot-bounce 3s ease-in-out infinite;
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 .mascot-figure:hover {
   filter: drop-shadow(0 8px 30px rgba(240, 185, 11, 0.4));
   animation: mascot-wave 1.2s ease-in-out;
 }
 
-/* Speech bubble */
+/* Speech bubble — default hidden */
 .mascot-bubble {
   position: absolute;
   bottom: calc(100% + 12px);
@@ -632,6 +663,8 @@ html {
   transform: translateY(8px) scale(0.95);
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
+  /* Auto-show bubble after mascot appears (4.5s = 3s entry + 1.5s wait), lasts ~7s */
+  animation: bubble-auto-show 8s ease 4.5s forwards;
 }
 .mascot-bubble::after {
   content: "";
@@ -645,14 +678,26 @@ html {
   border-bottom: 2px solid #f0b90b;
   transform: rotate(45deg);
 }
-.mascot-container:hover .mascot-bubble,
-.mascot-container.show-bubble .mascot-bubble {
+
+/* Checkbox checked → show bubble */
+.mascot-checkbox:checked ~ .mascot-container .mascot-bubble {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
   pointer-events: auto;
+  animation: none;
 }
 
+/* Hover on mascot also shows bubble */
+.mascot-container:hover .mascot-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  animation: none;
+}
+
+/* Close button (label that unchecks) */
 .mascot-close {
   position: absolute;
   top: -8px;
@@ -670,6 +715,7 @@ html {
   justify-content: center;
   transition: all 0.2s ease;
   line-height: 1;
+  text-decoration: none;
 }
 .mascot-close:hover {
   background: #f0b90b;
