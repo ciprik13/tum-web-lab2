@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S.C. DARION-NORD S.R.L. - Construcții și Materiale</title>
     <link rel="icon" href="assets/logo1.png" type="image/png" />
-    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
     <link
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-inter text-slate-700 bg-white overflow-x-hidden">
+  <body class="overflow-x-hidden bg-white font-inter text-slate-700">
     <header
       class="navbar fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3 transition-all duration-300"
       id="navbar"
@@ -28,13 +28,13 @@
           <img
             src="assets/logo1.png"
             alt="Logo Darion-Nord"
-            class="logo-img h-11 transition-all duration-300"
+            class="transition-all duration-300 logo-img h-11"
           />
           <span>DARION-NORD</span>
         </a>
 
         <nav class="nav-menu" id="navMenu">
-          <ul class="flex gap-2 items-center max-md:flex-col max-md:gap-2">
+          <ul class="flex items-center gap-2 max-md:flex-col max-md:gap-2">
             <li>
               <a
                 href="#despre"
@@ -82,7 +82,7 @@
 
         <a
           href="tel:+37369570971"
-          class="hidden md:flex items-center gap-2 font-semibold text-sm text-primary ml-4 px-4 py-2 border-2 border-primary rounded-lg transition-all duration-300 hover:bg-primary hover:text-white"
+          class="items-center hidden gap-2 px-4 py-2 ml-4 text-sm font-semibold transition-all duration-300 border-2 rounded-lg md:flex text-primary border-primary hover:bg-primary hover:text-white"
         >
           <svg
             width="18"
@@ -154,7 +154,7 @@
               class="text-[clamp(2.2rem,5vw,3.5rem)] max-md:text-[1.8rem] font-black text-white leading-[1.15] mb-6 tracking-tight"
             >
               Construcții Profesionale <br /><span
-                class="bg-gradient-to-br from-accent to-accent-light bg-clip-text text-transparent"
+                class="text-transparent bg-gradient-to-br from-accent to-accent-light bg-clip-text"
                 >și Soluții Complete</span
               ><br />
               pentru Proiectul Tău
@@ -199,7 +199,7 @@
 
           <!-- Right -->
           <div class="flex flex-col gap-6 animate-on-scroll">
-            <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4">
+            <div class="grid grid-cols-2 gap-4 max-md:grid-cols-1">
               <div
                 class="hero-stat-card hero-stat-card-1 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] col-span-2 max-md:col-span-1 max-lg:col-span-1"
               >
@@ -298,7 +298,7 @@
       <div
         class="absolute bottom-[30px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-[0.7rem] tracking-[0.15em] uppercase"
       >
-        <div class="scroll-line w-px h-10 bg-white/30"></div>
+        <div class="w-px h-10 scroll-line bg-white/30"></div>
       </div>
     </section>
 
@@ -335,7 +335,7 @@
                 class="w-full h-[500px] max-lg:h-[400px] max-md:h-[350px] max-sm:h-[280px] object-cover block"
               />
               <div
-                class="absolute bottom-6 left-6 right-6 flex gap-4 max-md:flex-col max-md:gap-3"
+                class="absolute flex gap-4 bottom-6 left-6 right-6 max-md:flex-col max-md:gap-3"
               >
                 <div
                   class="bg-primary/[0.92] backdrop-blur-[10px] py-4 px-6 rounded-xl flex-1 text-center border border-accent/30"
@@ -445,15 +445,15 @@
               <img
                 src="https://images.unsplash.com/photo-1590496793907-3a7b70f7d1c5?w=600&q=80"
                 alt="Depozite proprii"
-                class="w-full h-full object-cover block transition-transform duration-500 hover:scale-105"
+                class="block object-cover w-full h-full transition-transform duration-500 hover:scale-105"
               />
               <div
-                class="feature-box-gradient absolute bottom-0 left-0 right-0 pt-8 pb-6 px-6"
+                class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient"
               >
                 <h4 class="text-[1.25rem] font-bold text-white mb-2">
                   Logistică Proprie
                 </h4>
-                <p class="text-sm text-white/80 leading-relaxed">
+                <p class="text-sm leading-relaxed text-white/80">
                   Depozite în Bălți și flotă de transport pentru livrări rapide
                 </p>
               </div>
@@ -464,15 +464,15 @@
               <img
                 src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
                 alt="Prezență națională"
-                class="w-full h-full object-cover block transition-transform duration-500 hover:scale-105"
+                class="block object-cover w-full h-full transition-transform duration-500 hover:scale-105"
               />
               <div
-                class="feature-box-gradient absolute bottom-0 left-0 right-0 pt-8 pb-6 px-6"
+                class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient"
               >
                 <h4 class="text-[1.25rem] font-bold text-white mb-2">
                   Acoperire Națională
                 </h4>
-                <p class="text-sm text-white/80 leading-relaxed">
+                <p class="text-sm leading-relaxed text-white/80">
                   Operăm din Bălți pentru toată Moldova
                 </p>
               </div>
@@ -483,8 +483,8 @@
     </section>
 
     <!-- ===== MOBILE-ONLY: Quick stats banner (visible only on mobile) ===== -->
-    <div class="md:hidden bg-primary py-5 px-4">
-      <div class="flex justify-around items-center text-center">
+    <div class="px-4 py-5 md:hidden bg-primary">
+      <div class="flex items-center justify-around text-center">
         <div>
           <strong class="block text-2xl font-extrabold text-accent"
             >2007</strong
@@ -534,14 +534,14 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <!-- Service 1 - Large -->
           <div
             class="service-card-new service-bg-1 relative rounded-2xl overflow-hidden h-[380px] lg:h-[450px] lg:col-span-2 max-lg:col-span-1 transition-all duration-300 animate-on-scroll"
             style="--delay: 0s"
           >
-            <div class="service-image-wrapper relative w-full h-full">
-              <div class="service-overlay absolute inset-0 flex items-end p-9">
+            <div class="relative w-full h-full service-image-wrapper">
+              <div class="absolute inset-0 flex items-end service-overlay p-9">
                 <div class="relative z-[2]">
                   <div
                     class="text-[3.5rem] font-black text-accent opacity-25 leading-none mb-3 transition-all duration-300"
@@ -586,8 +586,8 @@
             class="service-card-new service-bg-2 relative rounded-2xl overflow-hidden h-[360px] max-md:h-[380px] transition-all duration-300 animate-on-scroll"
             style="--delay: 0.1s"
           >
-            <div class="service-image-wrapper relative w-full h-full">
-              <div class="service-overlay absolute inset-0 flex items-end p-9">
+            <div class="relative w-full h-full service-image-wrapper">
+              <div class="absolute inset-0 flex items-end service-overlay p-9">
                 <div class="relative z-[2]">
                   <div
                     class="text-[3.5rem] font-black text-accent opacity-25 leading-none mb-3 transition-all duration-300"
@@ -631,8 +631,8 @@
             class="service-card-new service-bg-3 relative rounded-2xl overflow-hidden h-[360px] max-md:h-[380px] transition-all duration-300 animate-on-scroll"
             style="--delay: 0.2s"
           >
-            <div class="service-image-wrapper relative w-full h-full">
-              <div class="service-overlay absolute inset-0 flex items-end p-9">
+            <div class="relative w-full h-full service-image-wrapper">
+              <div class="absolute inset-0 flex items-end service-overlay p-9">
                 <div class="relative z-[2]">
                   <div
                     class="text-[3.5rem] font-black text-accent opacity-25 leading-none mb-3 transition-all duration-300"
@@ -676,8 +676,8 @@
             class="service-card-new service-bg-4 relative rounded-2xl overflow-hidden h-[360px] max-md:h-[380px] transition-all duration-300 animate-on-scroll"
             style="--delay: 0.3s"
           >
-            <div class="service-image-wrapper relative w-full h-full">
-              <div class="service-overlay absolute inset-0 flex items-end p-9">
+            <div class="relative w-full h-full service-image-wrapper">
+              <div class="absolute inset-0 flex items-end service-overlay p-9">
                 <div class="relative z-[2]">
                   <div
                     class="text-[3.5rem] font-black text-accent opacity-25 leading-none mb-3 transition-all duration-300"
@@ -721,8 +721,8 @@
             class="service-card-new service-bg-5 relative rounded-2xl overflow-hidden h-[360px] max-md:h-[380px] transition-all duration-300 animate-on-scroll"
             style="--delay: 0.4s"
           >
-            <div class="service-image-wrapper relative w-full h-full">
-              <div class="service-overlay absolute inset-0 flex items-end p-9">
+            <div class="relative w-full h-full service-image-wrapper">
+              <div class="absolute inset-0 flex items-end service-overlay p-9">
                 <div class="relative z-[2]">
                   <div
                     class="text-[3.5rem] font-black text-accent opacity-25 leading-none mb-3 transition-all duration-300"
@@ -763,19 +763,19 @@
         </div>
 
         <!-- ===== MOBILE-ONLY: Combined services cards ===== -->
-        <div class="md:hidden mt-10 animate-on-scroll">
+        <div class="mt-10 md:hidden animate-on-scroll">
           <div class="flex items-center gap-3 mb-6">
-            <div class="h-px flex-1 bg-accent/30"></div>
+            <div class="flex-1 h-px bg-accent/30"></div>
             <h3
-              class="text-lg font-extrabold text-primary tracking-tight whitespace-nowrap"
+              class="text-lg font-extrabold tracking-tight text-primary whitespace-nowrap"
             >
               Specializări Metalice
             </h3>
-            <div class="h-px flex-1 bg-accent/30"></div>
+            <div class="flex-1 h-px bg-accent/30"></div>
           </div>
           <div class="grid grid-cols-2 gap-3">
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🏗️</span>
               <span
@@ -784,7 +784,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🔧</span>
               <span
@@ -793,7 +793,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">⚙️</span>
               <span
@@ -802,7 +802,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">📐</span>
               <span
@@ -811,7 +811,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">⛽</span>
               <span
@@ -820,7 +820,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">❄️</span>
               <span
@@ -829,7 +829,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🏭</span>
               <span
@@ -838,7 +838,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🌾</span>
               <span
@@ -847,7 +847,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🔬</span>
               <span
@@ -856,7 +856,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🪜</span>
               <span
@@ -865,7 +865,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">💧</span>
               <span
@@ -874,7 +874,7 @@
               >
             </div>
             <div
-              class="mobile-service-card bg-white rounded-xl p-4 border border-slate-200 shadow-sm flex flex-col items-center text-center gap-2 transition-all duration-300 hover:border-accent hover:shadow-md hover:-translate-y-1"
+              class="flex flex-col items-center gap-2 p-4 text-center transition-all duration-300 bg-white border shadow-sm mobile-service-card rounded-xl border-slate-200 hover:border-accent hover:shadow-md hover:-translate-y-1"
             >
               <span class="text-2xl">🏠</span>
               <span
@@ -1052,7 +1052,7 @@
             4 pași simpli de la idee la realitate
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           <!-- Step 1 -->
           <div
             class="group relative rounded-2xl overflow-hidden h-[380px] max-lg:h-[420px] max-md:h-[360px] transition-all duration-300 shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] animate-on-scroll"
@@ -1085,7 +1085,7 @@
                 </p>
               </div>
               <div
-                class="flex items-center justify-center w-12 h-12 bg-accent/15 rounded-full text-accent transition-all duration-300 self-end group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
+                class="flex items-center self-end justify-center w-12 h-12 transition-all duration-300 rounded-full bg-accent/15 text-accent group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
               >
                 <svg
                   width="24"
@@ -1134,7 +1134,7 @@
                 </p>
               </div>
               <div
-                class="flex items-center justify-center w-12 h-12 bg-accent/15 rounded-full text-accent transition-all duration-300 self-end group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
+                class="flex items-center self-end justify-center w-12 h-12 transition-all duration-300 rounded-full bg-accent/15 text-accent group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
               >
                 <svg
                   width="24"
@@ -1183,7 +1183,7 @@
                 </p>
               </div>
               <div
-                class="flex items-center justify-center w-12 h-12 bg-accent/15 rounded-full text-accent transition-all duration-300 self-end group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
+                class="flex items-center self-end justify-center w-12 h-12 transition-all duration-300 rounded-full bg-accent/15 text-accent group-hover:bg-accent group-hover:text-primary group-hover:translate-x-1"
               >
                 <svg
                   width="24"
@@ -1232,7 +1232,7 @@
                 </p>
               </div>
               <div
-                class="flex items-center justify-center w-12 h-12 bg-green-500/20 rounded-full text-green-500 transition-all duration-300 self-end group-hover:bg-green-500 group-hover:text-white group-hover:scale-110"
+                class="flex items-center self-end justify-center w-12 h-12 text-green-500 transition-all duration-300 rounded-full bg-green-500/20 group-hover:bg-green-500 group-hover:text-white group-hover:scale-110"
               >
                 <svg
                   width="28"
@@ -1270,15 +1270,15 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6">
           <!-- Advantage 1 -->
           <div
             class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-3 md:col-span-1 animate-on-scroll"
             style="--delay: 0s"
           >
-            <div class="advantage-bg-1 absolute inset-0"></div>
+            <div class="absolute inset-0 advantage-bg-1"></div>
             <div
-              class="advantage-overlay relative h-full p-8 flex flex-col justify-end"
+              class="relative flex flex-col justify-end h-full p-8 advantage-overlay"
             >
               <div
                 class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
@@ -1312,9 +1312,9 @@
             class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-3 md:col-span-1 animate-on-scroll"
             style="--delay: 0.1s"
           >
-            <div class="advantage-bg-2 absolute inset-0"></div>
+            <div class="absolute inset-0 advantage-bg-2"></div>
             <div
-              class="advantage-overlay relative h-full p-8 flex flex-col justify-end"
+              class="relative flex flex-col justify-end h-full p-8 advantage-overlay"
             >
               <div
                 class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
@@ -1349,9 +1349,9 @@
             class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll"
             style="--delay: 0.2s"
           >
-            <div class="advantage-bg-3 absolute inset-0"></div>
+            <div class="absolute inset-0 advantage-bg-3"></div>
             <div
-              class="advantage-overlay relative h-full p-8 flex flex-col justify-end"
+              class="relative flex flex-col justify-end h-full p-8 advantage-overlay"
             >
               <div
                 class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
@@ -1385,9 +1385,9 @@
             class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll"
             style="--delay: 0.3s"
           >
-            <div class="advantage-bg-4 absolute inset-0"></div>
+            <div class="absolute inset-0 advantage-bg-4"></div>
             <div
-              class="advantage-overlay relative h-full p-8 flex flex-col justify-end"
+              class="relative flex flex-col justify-end h-full p-8 advantage-overlay"
             >
               <div
                 class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
@@ -1420,9 +1420,9 @@
             class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll"
             style="--delay: 0.4s"
           >
-            <div class="advantage-bg-5 absolute inset-0"></div>
+            <div class="absolute inset-0 advantage-bg-5"></div>
             <div
-              class="advantage-overlay relative h-full p-8 flex flex-col justify-end"
+              class="relative flex flex-col justify-end h-full p-8 advantage-overlay"
             >
               <div
                 class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
@@ -1502,7 +1502,7 @@
                     <img
                       src="assets/logo-agroelit.png"
                       alt="AGROelit"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -1550,7 +1550,7 @@
                     <img
                       src="assets/logo-sudzucker.png"
                       alt="Südzucker"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -1598,7 +1598,7 @@
                     <img
                       src="assets/logo-marsharcon.png"
                       alt="Marsharcon"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -1646,7 +1646,7 @@
                     <img
                       src="assets/logo-floris.png"
                       alt="Floris"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -1694,7 +1694,7 @@
                     <img
                       src="assets/logo-beermaster.png"
                       alt="Beermaster Brewery"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -1742,7 +1742,7 @@
                     <img
                       src="assets/logo-rusnac.png"
                       alt="Rusnac"
-                      class="w-full h-full object-contain"
+                      class="object-contain w-full h-full"
                       onerror="
                         this.style.display = 'none';
                         this.nextElementSibling.style.display = 'flex';
@@ -2026,7 +2026,7 @@
           class="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-[50px] items-stretch"
         >
           <!-- Contact Info -->
-          <div class="flex flex-col gap-5 justify-between animate-on-scroll">
+          <div class="flex flex-col justify-between gap-5 animate-on-scroll">
             <a
               class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1 no-underline text-inherit cursor-pointer"
               href="https://maps.app.goo.gl/BkEHVjeLKKb91jHb7"
@@ -2034,7 +2034,7 @@
               rel="noopener noreferrer"
             >
               <div
-                class="w-11 h-11 rounded-lg bg-accent/15 flex items-center justify-center shrink-0 text-accent"
+                class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent"
               >
                 <svg
                   width="24"
@@ -2066,7 +2066,7 @@
               href="mailto:darion-nord@outlook.com"
             >
               <div
-                class="w-11 h-11 rounded-lg bg-accent/15 flex items-center justify-center shrink-0 text-accent"
+                class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent"
               >
                 <svg
                   width="24"
@@ -2100,7 +2100,7 @@
               href="tel:+37369570971"
             >
               <div
-                class="w-11 h-11 rounded-lg bg-accent/15 flex items-center justify-center shrink-0 text-accent"
+                class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent"
               >
                 <svg
                   width="24"
@@ -2132,7 +2132,7 @@
               class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1"
             >
               <div
-                class="w-11 h-11 rounded-lg bg-accent/15 flex items-center justify-center shrink-0 text-accent"
+                class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent"
               >
                 <svg
                   width="24"
@@ -2146,7 +2146,7 @@
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
-              <div class="schedule-wrapper relative">
+              <div class="relative schedule-wrapper">
                 <h4
                   class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider"
                 >
@@ -2172,7 +2172,7 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Luni</span
-                    ><span class="text-accent font-semibold"
+                    ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
                   </div>
@@ -2180,7 +2180,7 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Marți</span
-                    ><span class="text-accent font-semibold"
+                    ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
                   </div>
@@ -2188,7 +2188,7 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Miercuri</span
-                    ><span class="text-accent font-semibold"
+                    ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
                   </div>
@@ -2196,7 +2196,7 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Joi</span
-                    ><span class="text-accent font-semibold"
+                    ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
                   </div>
@@ -2204,7 +2204,7 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Vineri</span
-                    ><span class="text-accent font-semibold"
+                    ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
                   </div>
@@ -2212,13 +2212,13 @@
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
                     <span>Sâmbătă</span
-                    ><span class="text-red-500 font-semibold">Închis</span>
+                    ><span class="font-semibold text-red-500">Închis</span>
                   </div>
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70"
                   >
                     <span>Duminică</span
-                    ><span class="text-red-500 font-semibold">Închis</span>
+                    ><span class="font-semibold text-red-500">Închis</span>
                   </div>
                 </div>
               </div>
@@ -2249,7 +2249,7 @@
               style="display: none"
             />
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div class="mb-4">
                 <label
                   for="name"
@@ -2281,7 +2281,7 @@
                 />
               </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div class="mb-4">
                 <label
                   for="phone"
@@ -2316,7 +2316,7 @@
                 </select>
               </div>
             </div>
-            <div class="mb-4 flex-1 flex flex-col">
+            <div class="flex flex-col flex-1 mb-4">
               <label
                 for="message"
                 class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
@@ -2373,7 +2373,7 @@
           </div>
           <div>
             <h4
-              class="text-sm font-bold text-white mb-5 uppercase tracking-wider"
+              class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
             >
               Servicii
             </h4>
@@ -2410,7 +2410,7 @@
           </div>
           <div>
             <h4
-              class="text-sm font-bold text-white mb-5 uppercase tracking-wider"
+              class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
             >
               Companie
             </h4>
@@ -2447,7 +2447,7 @@
           </div>
           <div>
             <h4
-              class="text-sm font-bold text-white mb-5 uppercase tracking-wider"
+              class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
             >
               Contact Rapid
             </h4>
@@ -2470,7 +2470,7 @@
                 </svg>
                 <a
                   href="tel:+37369570971"
-                  class="text-white/50 transition-all duration-300 hover:text-accent"
+                  class="transition-all duration-300 text-white/50 hover:text-accent"
                   >+373 69 570 971</a
                 >
               </li>
@@ -2493,7 +2493,7 @@
                 </svg>
                 <a
                   href="mailto:darion-nord@outlook.com"
-                  class="text-white/50 transition-all duration-300 hover:text-accent"
+                  class="transition-all duration-300 text-white/50 hover:text-accent"
                   >darion-nord@outlook.com</a
                 >
               </li>
@@ -2516,7 +2516,7 @@
                   href="https://maps.app.goo.gl/BkEHVjeLKKb91jHb7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-white/50 transition-all duration-300 hover:text-accent"
+                  class="transition-all duration-300 text-white/50 hover:text-accent"
                   >Strada Smolean, nr. 46, Bălți, Republica Moldova</a
                 >
               </li>
@@ -2730,7 +2730,7 @@
     <input type="checkbox" id="mascot-toggle" class="mascot-checkbox" />
     <div class="mascot-container">
       <div class="mascot-bubble">
-        <p class="text-sm font-semibold text-primary leading-relaxed m-0">
+        <p class="m-0 text-sm font-semibold leading-relaxed text-primary">
           👷 Salut! Ai nevoie de o construcție solidă? Suntem aici!
         </p>
       </div>
