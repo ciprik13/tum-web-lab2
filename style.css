@@ -159,8 +159,8 @@ html {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(15, 29, 53, 0.85),
-    rgba(15, 29, 53, 0.7)
+    rgba(15, 29, 53, 0.68),
+    rgba(15, 29, 53, 0.5)
   );
   z-index: 0;
 }
@@ -171,29 +171,29 @@ html {
 .hero-stat-card:hover::before {
   background: linear-gradient(
     135deg,
-    rgba(15, 29, 53, 0.9),
-    rgba(15, 29, 53, 0.75)
+    rgba(15, 29, 53, 0.74),
+    rgba(15, 29, 53, 0.56)
   );
 }
 .hero-stat-card-1 {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.4), rgba(15, 29, 53, 0.3)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.22), rgba(15, 29, 53, 0.14)),
     url("assets/construction_site.jpg") center/cover;
 }
 .hero-stat-card-2 {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.4), rgba(15, 29, 53, 0.3)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.22), rgba(15, 29, 53, 0.14)),
     url("assets/industrial_building.jpg") center/cover;
 }
 .hero-stat-card-3 {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.4), rgba(15, 29, 53, 0.3)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.22), rgba(15, 29, 53, 0.14)),
     url("assets/warehouse_logistics_truck.jpg") center/cover;
 }
 
 .hero-features-bg {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.4), rgba(15, 29, 53, 0.3)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.22), rgba(15, 29, 53, 0.14)),
     url("assets/steel_structure_industrial.jpg") center/cover;
 }
 .hero-features-bg::before {
@@ -202,8 +202,8 @@ html {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(15, 29, 53, 0.85),
-    rgba(15, 29, 53, 0.7)
+    rgba(15, 29, 53, 0.68),
+    rgba(15, 29, 53, 0.5)
   );
   z-index: 0;
 }
@@ -228,27 +228,27 @@ html {
 
 .service-bg-1 .service-image-wrapper {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.7), rgba(15, 29, 53, 0.5)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.5), rgba(15, 29, 53, 0.35)),
     url("assets/construction_site.jpg") center/cover;
 }
 .service-bg-2 .service-image-wrapper {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.7), rgba(15, 29, 53, 0.5)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.5), rgba(15, 29, 53, 0.35)),
     url("assets/steel_structure_industrial.jpg") center/cover;
 }
 .service-bg-3 .service-image-wrapper {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.7), rgba(15, 29, 53, 0.5)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.5), rgba(15, 29, 53, 0.35)),
     url("assets/industrial_building.jpg") center/cover;
 }
 .service-bg-4 .service-image-wrapper {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.7), rgba(15, 29, 53, 0.5)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.5), rgba(15, 29, 53, 0.35)),
     url("assets/warehouse_logistics_truck.jpg") center/cover;
 }
 .service-bg-5 .service-image-wrapper {
   background:
-    linear-gradient(135deg, rgba(15, 29, 53, 0.7), rgba(15, 29, 53, 0.5)),
+    linear-gradient(135deg, rgba(15, 29, 53, 0.5), rgba(15, 29, 53, 0.35)),
     url("assets/construction_site.jpg") center/cover;
 }
 
@@ -256,18 +256,18 @@ html {
 .service-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.95) 0%,
-    rgba(15, 29, 53, 0.6) 50%,
-    rgba(15, 29, 53, 0.3) 100%
+    rgba(15, 29, 53, 0.82) 0%,
+    rgba(15, 29, 53, 0.45) 50%,
+    rgba(15, 29, 53, 0.18) 100%
   );
   transition: background 0.4s ease;
 }
 .service-card-new:hover .service-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.98) 0%,
-    rgba(15, 29, 53, 0.75) 60%,
-    rgba(15, 29, 53, 0.4) 100%
+    rgba(15, 29, 53, 0.88) 0%,
+    rgba(15, 29, 53, 0.55) 60%,
+    rgba(15, 29, 53, 0.25) 100%
   );
 }
 
@@ -281,8 +281,8 @@ html {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(15, 29, 53, 0.75),
-    rgba(15, 29, 53, 0.65)
+    rgba(15, 29, 53, 0.56),
+    rgba(15, 29, 53, 0.42)
   );
   z-index: 1;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -290,8 +290,8 @@ html {
 .detailed-service-item:hover::before {
   background: linear-gradient(
     135deg,
-    rgba(15, 29, 53, 0.7),
-    rgba(15, 29, 53, 0.6)
+    rgba(15, 29, 53, 0.5),
+    rgba(15, 29, 53, 0.38)
   );
 }
 .detailed-service-item::after {
@@ -363,17 +363,17 @@ html {
 .process-card-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.95) 0%,
-    rgba(15, 29, 53, 0.8) 60%,
-    rgba(15, 29, 53, 0.5) 100%
+    rgba(15, 29, 53, 0.82) 0%,
+    rgba(15, 29, 53, 0.6) 60%,
+    rgba(15, 29, 53, 0.3) 100%
   );
 }
 .group:hover .process-card-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.98) 0%,
-    rgba(15, 29, 53, 0.85) 60%,
-    rgba(15, 29, 53, 0.6) 100%
+    rgba(15, 29, 53, 0.88) 0%,
+    rgba(15, 29, 53, 0.68) 60%,
+    rgba(15, 29, 53, 0.38) 100%
   );
 }
 
@@ -397,18 +397,18 @@ html {
 .advantage-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.92) 0%,
-    rgba(15, 29, 53, 0.7) 60%,
-    rgba(15, 29, 53, 0.3) 100%
+    rgba(15, 29, 53, 0.8) 0%,
+    rgba(15, 29, 53, 0.55) 60%,
+    rgba(15, 29, 53, 0.2) 100%
   );
   transition: background 0.4s ease;
 }
 .group:hover .advantage-overlay {
   background: linear-gradient(
     to top,
-    rgba(15, 29, 53, 0.95) 0%,
-    rgba(15, 29, 53, 0.8) 60%,
-    rgba(15, 29, 53, 0.4) 100%
+    rgba(15, 29, 53, 0.86) 0%,
+    rgba(15, 29, 53, 0.65) 60%,
+    rgba(15, 29, 53, 0.3) 100%
   );
 }
 
@@ -721,6 +721,42 @@ html {
   background: #f0b90b;
   color: #0f1d35;
   transform: scale(1.15);
+}
+
+/* LANGUAGE SWITCHER */
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 8px;
+}
+
+.lang-btn {
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #64748b;
+  background: transparent;
+  line-height: 1.4;
+}
+
+.lang-btn:hover {
+  color: #0f1d35;
+  border-color: #0f1d35;
+  background: rgba(15, 29, 53, 0.05);
+}
+
+.lang-btn.active {
+  color: #0f1d35;
+  border-color: #f0b90b;
+  background: rgba(240, 185, 11, 0.12);
 }
 
 @media (max-width: 480px) {
