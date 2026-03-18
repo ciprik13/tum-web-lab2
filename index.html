@@ -12,68 +12,75 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="i18n.js" defer></script>
   </head>
   <body class="overflow-x-hidden bg-white font-inter text-slate-700">
     <header
-      class="navbar fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3 transition-all duration-300"
+      class="navbar fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3.5 transition-all duration-300"
       id="navbar"
     >
-      <div
-        class="max-w-[1200px] mx-auto px-6 flex justify-between items-center"
-      >
+      <div class="max-w-[1200px] mx-auto px-6 flex items-center gap-5">
         <a
           href="#hero"
-          class="flex items-center font-extrabold text-[1.15rem] text-primary tracking-tight gap-2.5"
+          class="shrink-0 flex items-center font-extrabold text-[1.15rem] lg:text-[1.2rem] text-primary tracking-tight gap-2.5 whitespace-nowrap"
         >
           <img
             src="assets/logo1.png"
             alt="Logo Darion-Nord"
-            class="transition-all duration-300 logo-img h-11"
+            class="transition-all duration-300 logo-img h-12"
           />
           <span>DARION-NORD</span>
         </a>
 
-        <nav class="nav-menu" id="navMenu">
-          <ul class="flex items-center gap-2 max-md:flex-col max-md:gap-2">
+        <nav class="nav-menu md:flex md:min-w-0 md:ml-6" id="navMenu">
+          <ul
+            class="flex items-center gap-1.5 lg:gap-2 flex-nowrap max-md:flex-col max-md:gap-2"
+          >
             <li>
               <a
                 href="#despre"
-                class="nav-link font-medium text-sm text-slate-700 px-3.5 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                class="nav-link whitespace-nowrap font-medium text-[0.96rem] text-slate-700 px-3.5 py-2.5 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                data-i18n="nav_about"
                 >Despre Noi</a
               >
             </li>
             <li>
               <a
                 href="#servicii"
-                class="nav-link font-medium text-sm text-slate-700 px-3.5 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                class="nav-link whitespace-nowrap font-medium text-[0.96rem] text-slate-700 px-3.5 py-2.5 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                data-i18n="nav_services"
                 >Servicii</a
               >
             </li>
             <li>
               <a
                 href="#proces"
-                class="nav-link font-medium text-sm text-slate-700 px-3.5 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                class="nav-link whitespace-nowrap font-medium text-[0.96rem] text-slate-700 px-3.5 py-2.5 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                data-i18n="nav_process"
                 >Cum Lucrăm</a
               >
             </li>
             <li>
               <a
                 href="#avantaje"
-                class="nav-link font-medium text-sm text-slate-700 px-3.5 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                class="nav-link whitespace-nowrap font-medium text-[0.96rem] text-slate-700 px-3.5 py-2.5 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                data-i18n="nav_advantages"
                 >Avantaje</a
               >
             </li>
             <li>
               <a
                 href="#proiecte"
-                class="nav-link font-medium text-sm text-slate-700 px-3.5 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                class="nav-link whitespace-nowrap font-medium text-[0.96rem] text-slate-700 px-3.5 py-2.5 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/5 max-md:text-base max-md:py-3 max-md:px-4 max-md:w-full max-md:block"
+                data-i18n="nav_projects"
                 >Proiecte</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="nav-link btn-nav bg-primary text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 hover:bg-primary-light hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(15,29,53,0.3)] max-md:text-center max-md:mt-2 max-md:block"
+                class="nav-link btn-nav shrink-0 whitespace-nowrap bg-primary text-white px-5 py-2.5 rounded-lg font-medium text-[0.96rem] transition-all duration-300 hover:bg-primary-light hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(15,29,53,0.3)] max-md:text-center max-md:mt-2 max-md:block"
+                data-i18n="nav_contact"
                 >Contactează-ne</a
               >
             </li>
@@ -82,7 +89,7 @@
 
         <a
           href="tel:+37369570971"
-          class="items-center hidden gap-2 px-4 py-2 ml-4 text-sm font-semibold transition-all duration-300 border-2 rounded-lg md:flex text-primary border-primary hover:bg-primary hover:text-white"
+          class="hidden items-center shrink-0 whitespace-nowrap gap-1.5 px-3 py-1.5 ml-auto text-[0.9rem] font-semibold transition-all duration-300 border-2 rounded-lg text-primary border-primary hover:bg-primary hover:text-white"
         >
           <svg
             width="18"
@@ -100,6 +107,14 @@
           </svg>
           +373 69 570 971
         </a>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher shrink-0 ml-3" id="langSwitcher">
+          <button class="lang-btn" data-lang="ro">RO</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+
         <button
           class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-2 z-[1001]"
           id="hamburger"
@@ -147,20 +162,24 @@
           <div class="text-left max-lg:text-center animate-on-scroll">
             <div
               class="inline-block bg-accent/15 text-accent px-5 py-2 rounded-full text-[0.85rem] font-semibold tracking-wider uppercase mb-6 border border-accent/20"
+              data-i18n="hero_badge"
             >
               Construcții & Inginerie Structurală
             </div>
             <h1
               class="text-[clamp(2.2rem,5vw,3.5rem)] max-md:text-[1.8rem] font-black text-white leading-[1.15] mb-6 tracking-tight"
             >
-              Construcții Profesionale <br /><span
+              <span data-i18n="hero_title_1">Construcții Profesionale</span>
+              <br /><span
                 class="text-transparent bg-gradient-to-br from-accent to-accent-light bg-clip-text"
+                data-i18n="hero_title_2"
                 >și Soluții Complete</span
               ><br />
-              pentru Proiectul Tău
+              <span data-i18n="hero_title_3">pentru Proiectul Tău</span>
             </h1>
             <p
               class="text-[1.05rem] text-white/75 mb-9 leading-[1.8] max-w-[550px] max-lg:mx-auto"
+              data-i18n="hero_desc"
             >
               De la logistică proprie și furnizarea materialelor brute, până la
               proiectarea și execuția sistemelor industriale complexe. Soluții
@@ -174,7 +193,7 @@
                 href="#contact"
                 class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-3.5 font-bold text-[0.95rem] rounded-lg transition-all duration-300 border-none cursor-pointer tracking-tight hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]"
               >
-                Solicită Ofertă
+                <span data-i18n="hero_cta_offer">Solicită Ofertă</span>
                 <svg
                   width="20"
                   height="20"
@@ -192,6 +211,7 @@
               <a
                 href="#servicii"
                 class="inline-flex items-center gap-2.5 bg-white/10 text-white px-8 py-3.5 font-semibold text-[0.95rem] rounded-lg transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-0.5"
+                data-i18n="hero_cta_services"
                 >Descoperă Serviciile</a
               >
             </div>
@@ -209,6 +229,7 @@
                 >
                 <span
                   class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
+                  data-i18n="stat_founded_label"
                   >Anul Fondării</span
                 >
               </div>
@@ -221,6 +242,7 @@
                 >
                 <span
                   class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
+                  data-i18n="stat_projects_label"
                   >Proiecte Finalizate</span
                 >
               </div>
@@ -233,6 +255,7 @@
                 >
                 <span
                   class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
+                  data-i18n="stat_clients_label"
                   >Clienți Mulțumiți</span
                 >
               </div>
@@ -255,7 +278,7 @@
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
-                <span>Depozite proprii în Bălți</span>
+                <span data-i18n="hero_feat_1">Depozite proprii în Bălți</span>
               </div>
               <div
                 class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]"
@@ -272,7 +295,9 @@
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
-                <span>Echipă cu 15+ ani experiență</span>
+                <span data-i18n="hero_feat_2"
+                  >Echipă cu 15+ ani experiență</span
+                >
               </div>
               <div
                 class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]"
@@ -289,7 +314,7 @@
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
                 </svg>
-                <span>Soluții complete la cheie</span>
+                <span data-i18n="hero_feat_3">Soluții complete la cheie</span>
               </div>
             </div>
           </div>
@@ -307,15 +332,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="about_badge"
             >Despre Noi</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="about_title"
           >
             Construim viitorul Moldovei
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="about_sub"
           >
             Din 2007, partenerul tău de încredere în construcții
           </p>
@@ -346,6 +374,7 @@
                   >
                   <span
                     class="text-[0.8rem] text-white/70 uppercase tracking-wider"
+                    data-i18n="stat_founded_label2"
                     >Anul fondării</span
                   >
                 </div>
@@ -358,6 +387,7 @@
                   >
                   <span
                     class="text-[0.8rem] text-white/70 uppercase tracking-wider"
+                    data-i18n="stat_projects_label2"
                     >Proiecte finalizate</span
                   >
                 </div>
@@ -366,16 +396,23 @@
             <div>
               <h3
                 class="text-[1.6rem] font-extrabold text-primary mb-5 leading-[1.3]"
+                data-i18n="about_story_title"
               >
                 O poveste de succes în construcții de peste 18 ani
               </h3>
-              <p class="text-slate-500 leading-[1.8] mb-4">
+              <p
+                class="text-slate-500 leading-[1.8] mb-4"
+                data-i18n-html="about_story_p1"
+              >
                 Fondată în 2007 în <strong>Bălți</strong>, DARION-NORD s-a
                 dezvoltat constant, devenind un lider regional în construcții
                 industriale și civile. Portofoliul nostru include peste 200 de
                 proiecte finalizate cu succes.
               </p>
-              <p class="text-slate-500 leading-[1.8] mb-4">
+              <p
+                class="text-slate-500 leading-[1.8] mb-4"
+                data-i18n="about_story_p2"
+              >
                 Investim continuu în echipamente moderne și tehnologii de ultimă
                 generație pentru a oferi clienților noștri cele mai eficiente
                 soluții constructive pe piața din Moldova.
@@ -395,7 +432,9 @@
                   >
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                   </svg>
-                  <span>Certificări ISO pentru calitate</span>
+                  <span data-i18n="about_feat_1"
+                    >Certificări ISO pentru calitate</span
+                  >
                 </div>
                 <div
                   class="flex items-center gap-3 font-semibold text-slate-700"
@@ -413,7 +452,9 @@
                     <circle cx="8.5" cy="7" r="4" />
                     <polyline points="17 11 19 13 23 9" />
                   </svg>
-                  <span>Personal certificat și experimentat</span>
+                  <span data-i18n="about_feat_2"
+                    >Personal certificat și experimentat</span
+                  >
                 </div>
                 <div
                   class="flex items-center gap-3 font-semibold text-slate-700"
@@ -429,7 +470,9 @@
                   >
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                   </svg>
-                  <span>Monitorizare continuă a proiectelor</span>
+                  <span data-i18n="about_feat_3"
+                    >Monitorizare continuă a proiectelor</span
+                  >
                 </div>
               </div>
             </div>
@@ -450,10 +493,16 @@
               <div
                 class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient"
               >
-                <h4 class="text-[1.25rem] font-bold text-white mb-2">
+                <h4
+                  class="text-[1.25rem] font-bold text-white mb-2"
+                  data-i18n="feature_box_1_title"
+                >
                   Logistică Proprie
                 </h4>
-                <p class="text-sm leading-relaxed text-white/80">
+                <p
+                  class="text-sm leading-relaxed text-white/80"
+                  data-i18n="feature_box_1_desc"
+                >
                   Depozite în Bălți și flotă de transport pentru livrări rapide
                 </p>
               </div>
@@ -469,10 +518,16 @@
               <div
                 class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient"
               >
-                <h4 class="text-[1.25rem] font-bold text-white mb-2">
+                <h4
+                  class="text-[1.25rem] font-bold text-white mb-2"
+                  data-i18n="feature_box_2_title"
+                >
                   Acoperire Națională
                 </h4>
-                <p class="text-sm leading-relaxed text-white/80">
+                <p
+                  class="text-sm leading-relaxed text-white/80"
+                  data-i18n="feature_box_2_desc"
+                >
                   Operăm din Bălți pentru toată Moldova
                 </p>
               </div>
@@ -489,7 +544,9 @@
           <strong class="block text-2xl font-extrabold text-accent"
             >2007</strong
           >
-          <span class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+          <span
+            class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+            data-i18n="mobile_stat_founded"
             >Fondată</span
           >
         </div>
@@ -498,7 +555,9 @@
           <strong class="block text-2xl font-extrabold text-accent"
             >200+</strong
           >
-          <span class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+          <span
+            class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+            data-i18n="mobile_stat_projects"
             >Proiecte</span
           >
         </div>
@@ -507,7 +566,9 @@
           <strong class="block text-2xl font-extrabold text-accent"
             >100%</strong
           >
-          <span class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+          <span
+            class="text-[0.7rem] text-white/60 uppercase tracking-wider"
+            data-i18n="mobile_stat_satisfaction"
             >Satisfacție</span
           >
         </div>
@@ -520,15 +581,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="services_badge"
             >Ce facem</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="services_title"
           >
             Serviciile Noastre
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="services_sub"
           >
             Soluții complete de la proiectare la finisare
           </p>
@@ -550,11 +614,13 @@
                   </div>
                   <h3
                     class="text-2xl lg:text-[1.8rem] font-extrabold text-white mb-3 leading-[1.3]"
+                    data-i18n="service_1_title"
                   >
                     Construcții Civile și Inginerești
                   </h3>
                   <p
                     class="text-base text-white/80 leading-[1.7] mb-5 max-w-[500px]"
+                    data-i18n="service_1_desc"
                   >
                     Execuție completă de la fundație la acoperiș pentru clădiri
                     rezidențiale și nerezidențiale
@@ -562,6 +628,7 @@
                   <a
                     href="#contact"
                     class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] transition-all duration-300 px-6 py-3 bg-accent/15 rounded-lg border border-accent/30 hover:bg-accent hover:text-primary hover:gap-3 hover:shadow-[0_4px_20px_rgba(240,185,11,0.4)]"
+                    data-i18n="service_cta"
                   >
                     Solicită Ofertă
                     <svg
@@ -596,17 +663,20 @@
                   </div>
                   <h3
                     class="text-2xl font-extrabold text-white mb-3 leading-[1.3]"
+                    data-i18n="service_2_title"
                   >
                     Construcții Metalice Industriale
                   </h3>
                   <p
                     class="text-base text-white/80 leading-[1.7] mb-5 max-w-[500px]"
+                    data-i18n="service_2_desc"
                   >
                     Hale industriale, platforme și scări metalice
                   </p>
                   <a
                     href="#contact"
                     class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] transition-all duration-300 px-6 py-3 bg-accent/15 rounded-lg border border-accent/30 hover:bg-accent hover:text-primary hover:gap-3 hover:shadow-[0_4px_20px_rgba(240,185,11,0.4)]"
+                    data-i18n="service_cta"
                   >
                     Solicită Ofertă
                     <svg
@@ -641,17 +711,20 @@
                   </div>
                   <h3
                     class="text-2xl font-extrabold text-white mb-3 leading-[1.3]"
+                    data-i18n="service_3_title"
                   >
                     Instalații și Utilități
                   </h3>
                   <p
                     class="text-base text-white/80 leading-[1.7] mb-5 max-w-[500px]"
+                    data-i18n="service_3_desc"
                   >
                     Electricitate, sanitare și sisteme HVAC
                   </p>
                   <a
                     href="#contact"
                     class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] transition-all duration-300 px-6 py-3 bg-accent/15 rounded-lg border border-accent/30 hover:bg-accent hover:text-primary hover:gap-3 hover:shadow-[0_4px_20px_rgba(240,185,11,0.4)]"
+                    data-i18n="service_cta"
                   >
                     Solicită Ofertă
                     <svg
@@ -686,17 +759,20 @@
                   </div>
                   <h3
                     class="text-2xl font-extrabold text-white mb-3 leading-[1.3]"
+                    data-i18n="service_4_title"
                   >
                     Logistica Materialelor
                   </h3>
                   <p
                     class="text-base text-white/80 leading-[1.7] mb-5 max-w-[500px]"
+                    data-i18n="service_4_desc"
                   >
                     Furnizare și transport din depozite proprii
                   </p>
                   <a
                     href="#contact"
                     class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] transition-all duration-300 px-6 py-3 bg-accent/15 rounded-lg border border-accent/30 hover:bg-accent hover:text-primary hover:gap-3 hover:shadow-[0_4px_20px_rgba(240,185,11,0.4)]"
+                    data-i18n="service_cta"
                   >
                     Solicită Ofertă
                     <svg
@@ -731,17 +807,20 @@
                   </div>
                   <h3
                     class="text-2xl font-extrabold text-white mb-3 leading-[1.3]"
+                    data-i18n="service_5_title"
                   >
                     Demolări și Pregătire Teren
                   </h3>
                   <p
                     class="text-base text-white/80 leading-[1.7] mb-5 max-w-[500px]"
+                    data-i18n="service_5_desc"
                   >
                     Curățare, demolare și nivelare pentru șantier
                   </p>
                   <a
                     href="#contact"
                     class="inline-flex items-center gap-2 text-accent font-bold text-[0.95rem] transition-all duration-300 px-6 py-3 bg-accent/15 rounded-lg border border-accent/30 hover:bg-accent hover:text-primary hover:gap-3 hover:shadow-[0_4px_20px_rgba(240,185,11,0.4)]"
+                    data-i18n="service_cta"
                   >
                     Solicită Ofertă
                     <svg
@@ -768,6 +847,7 @@
             <div class="flex-1 h-px bg-accent/30"></div>
             <h3
               class="text-lg font-extrabold tracking-tight text-primary whitespace-nowrap"
+              data-i18n="mobile_metal_heading"
             >
               Specializări Metalice
             </h3>
@@ -780,6 +860,7 @@
               <span class="text-2xl">🏗️</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_1"
                 >Carcase pentru clădiri</span
               >
             </div>
@@ -789,6 +870,7 @@
               <span class="text-2xl">🔧</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_2"
                 >Țevi tehnologice</span
               >
             </div>
@@ -798,6 +880,7 @@
               <span class="text-2xl">⚙️</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_3"
                 >Pompe, cisterne și elevatoare</span
               >
             </div>
@@ -807,6 +890,7 @@
               <span class="text-2xl">📐</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_4"
                 >Linii tehnologice</span
               >
             </div>
@@ -816,6 +900,7 @@
               <span class="text-2xl">⛽</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_5"
                 >Sisteme carburanți</span
               >
             </div>
@@ -825,6 +910,7 @@
               <span class="text-2xl">❄️</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_6"
                 >Frigidere fructe & legume</span
               >
             </div>
@@ -834,6 +920,7 @@
               <span class="text-2xl">🏭</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_7"
                 >Hale îmbuteliere ulei</span
               >
             </div>
@@ -843,6 +930,7 @@
               <span class="text-2xl">🌾</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_8"
                 >Uscătorii de cereale</span
               >
             </div>
@@ -852,6 +940,7 @@
               <span class="text-2xl">🔬</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_9"
                 >Selecție boabe de grîu</span
               >
             </div>
@@ -861,6 +950,7 @@
               <span class="text-2xl">🪜</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_10"
                 >Scări & balustrade metal</span
               >
             </div>
@@ -870,6 +960,7 @@
               <span class="text-2xl">💧</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_11"
                 >Hale sandwich paneluri</span
               >
             </div>
@@ -879,6 +970,7 @@
               <span class="text-2xl">🏠</span>
               <span
                 class="text-[0.82rem] font-semibold text-primary leading-snug"
+                data-i18n="mobile_svc_12"
                 >Construcții metalice PVC</span
               >
             </div>
@@ -894,15 +986,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="spec_badge"
             >Specializări</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="spec_title"
           >
             Servicii Complete
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="spec_sub"
           >
             Compania noastră oferă o gamă largă de construcții metalice
           </p>
@@ -916,6 +1011,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_1"
             >
               Carcase pentru clădiri
             </h4>
@@ -926,6 +1022,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_2"
             >
               Tevi tehnologice
             </h4>
@@ -936,6 +1033,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_3"
             >
               Pompe, cisterne și elevatoare
             </h4>
@@ -946,6 +1044,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_4"
             >
               Linii tehnologice verticale și orizontale
             </h4>
@@ -956,6 +1055,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_5"
             >
               Sisteme de încărcare de la sursă primară a carburanților
             </h4>
@@ -966,6 +1066,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_6"
             >
               Frigidere de păstrare ale fructelor și legumelor
             </h4>
@@ -976,6 +1077,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_7"
             >
               Hale pentru îmbutelierea uleiului
             </h4>
@@ -986,6 +1088,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_8"
             >
               Uscătorii de cereale
             </h4>
@@ -996,6 +1099,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_9"
             >
               Noduri de selecție ale boabelor de griu
             </h4>
@@ -1006,6 +1110,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_10"
             >
               Scări din metal, balustrade la clădiri comerciale
             </h4>
@@ -1016,6 +1121,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_11"
             >
               Hale de păstrare ale apei din sandwich paneluri
             </h4>
@@ -1026,6 +1132,7 @@
           >
             <h4
               class="relative z-[2] text-[1.1rem] font-bold text-white leading-relaxed m-0 transition-all duration-300 hover:text-accent hover:scale-105"
+              data-i18n="spec_item_12"
             >
               Construcții metalice pentru instalație din PVC
             </h4>
@@ -1039,15 +1146,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent bg-accent/15 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="process_badge"
             >Procesul nostru</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-white mb-3 tracking-tight leading-[1.2]"
+            data-i18n="process_title"
           >
             Cum Lucrăm
           </h2>
           <p
             class="text-[1.05rem] text-white/60 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="process_sub"
           >
             4 pași simpli de la idee la realitate
           </p>
@@ -1073,11 +1183,13 @@
               <div>
                 <h4
                   class="text-[1.3rem] font-extrabold text-white mb-3 leading-[1.3]"
+                  data-i18n="process_1_title"
                 >
                   Pregătirea și Demolarea
                 </h4>
                 <p
                   class="text-[0.95rem] text-white/85 leading-[1.7] mb-5 flex-1"
+                  data-i18n="process_1_desc"
                 >
                   Analizăm amplasamentul și oferim servicii de curățare,
                   demolare a structurilor vechi și nivelare a solului pentru a
@@ -1122,11 +1234,13 @@
               <div>
                 <h4
                   class="text-[1.3rem] font-extrabold text-white mb-3 leading-[1.3]"
+                  data-i18n="process_2_title"
                 >
                   Ridicarea Structurii
                 </h4>
                 <p
                   class="text-[0.95rem] text-white/85 leading-[1.7] mb-5 flex-1"
+                  data-i18n="process_2_desc"
                 >
                   Executăm structura de rezistență (beton sau metal) folosind
                   materiale certificate și tehnici riguroase care respectă
@@ -1171,11 +1285,13 @@
               <div>
                 <h4
                   class="text-[1.3rem] font-extrabold text-white mb-3 leading-[1.3]"
+                  data-i18n="process_3_title"
                 >
                   Sisteme și Utilități
                 </h4>
                 <p
                   class="text-[0.95rem] text-white/85 leading-[1.7] mb-5 flex-1"
+                  data-i18n="process_3_desc"
                 >
                   Implementăm rețelele de apă, canalizare, electricitate și
                   încălzire, transformând structura brută într-un spațiu
@@ -1220,11 +1336,13 @@
               <div>
                 <h4
                   class="text-[1.3rem] font-extrabold text-white mb-3 leading-[1.3]"
+                  data-i18n="process_4_title"
                 >
                   Finisaje și Predare
                 </h4>
                 <p
                   class="text-[0.95rem] text-white/85 leading-[1.7] mb-5 flex-1"
+                  data-i18n="process_4_desc"
                 >
                   Realizăm lucrările de estetică și finisajele profesionale.
                   Predăm proiectul la cheie, garantând durabilitatea execuției
@@ -1256,15 +1374,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="adv_badge"
             >De ce noi</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="adv_title"
           >
             Avantajele Noastre
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="adv_sub"
           >
             Ce ne face diferiți
           </p>
@@ -1297,10 +1418,14 @@
               </div>
               <h3
                 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]"
+                data-i18n="adv_1_title"
               >
                 Calitate Garantată
               </h3>
-              <p class="text-[0.95rem] text-white/85 leading-[1.7]">
+              <p
+                class="text-[0.95rem] text-white/85 leading-[1.7]"
+                data-i18n="adv_1_desc"
+              >
                 Materiale certificate și tehnici moderne pentru durabilitate
                 maximă
               </p>
@@ -1335,10 +1460,14 @@
               </div>
               <h3
                 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]"
+                data-i18n="adv_2_title"
               >
                 Logistică Proprie
               </h3>
-              <p class="text-[0.95rem] text-white/85 leading-[1.7]">
+              <p
+                class="text-[0.95rem] text-white/85 leading-[1.7]"
+                data-i18n="adv_2_desc"
+              >
                 Depozite și transport propriu în Bălți
               </p>
             </div>
@@ -1371,10 +1500,14 @@
               </div>
               <h3
                 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]"
+                data-i18n="adv_3_title"
               >
                 Soluții Personalizate
               </h3>
-              <p class="text-[0.95rem] text-white/85 leading-[1.7]">
+              <p
+                class="text-[0.95rem] text-white/85 leading-[1.7]"
+                data-i18n="adv_3_desc"
+              >
                 Adaptăm fiecare proiect la nevoile tale
               </p>
             </div>
@@ -1406,10 +1539,14 @@
               </div>
               <h3
                 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]"
+                data-i18n="adv_4_title"
               >
                 Acoperire Națională
               </h3>
-              <p class="text-[0.95rem] text-white/85 leading-[1.7]">
+              <p
+                class="text-[0.95rem] text-white/85 leading-[1.7]"
+                data-i18n="adv_4_desc"
+              >
                 Servicii în toată Moldova din hub-ul Bălți
               </p>
             </div>
@@ -1443,10 +1580,14 @@
               </div>
               <h3
                 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]"
+                data-i18n="adv_5_title"
               >
                 Echipă cu 15+ Ani
               </h3>
-              <p class="text-[0.95rem] text-white/85 leading-[1.7]">
+              <p
+                class="text-[0.95rem] text-white/85 leading-[1.7]"
+                data-i18n="adv_5_desc"
+              >
                 Specialiști experimentați în toate domeniile
               </p>
             </div>
@@ -1460,15 +1601,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="testim_badge"
             >Portofoliu</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="testim_title"
           >
             Ce spun clienții noștri
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="testim_sub"
           >
             Proiecte finalizate cu succes
           </p>
@@ -1477,6 +1621,7 @@
           <button
             class="testimonial-prev shrink-0 w-[52px] h-[52px] max-sm:w-[42px] max-sm:h-[42px] rounded-full bg-primary text-white border-none cursor-pointer flex items-center justify-center transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] z-[2] hover:bg-accent hover:text-primary hover:scale-[1.08] hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
             aria-label="Anterior"
+            data-i18n-aria="testim_prev_aria"
           >
             <svg
               width="24"
@@ -1528,6 +1673,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_1_quote"
                 >
                   "Colaborarea cu DARION-NORD pentru construcția depozitului
                   nostru agricol a fost excepțională. Echipa lor profesionistă a
@@ -1535,6 +1681,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_1_meta"
                   >Companie Agricolă, Regiunea Nord</span
                 >
               </div>
@@ -1576,6 +1723,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_2_quote"
                 >
                   "DARION-NORD a executat lucrările de construcție conform
                   standardelor industriale internaționale. Respectarea riguroasă
@@ -1583,6 +1731,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_2_meta"
                   >Producător Industrial</span
                 >
               </div>
@@ -1624,6 +1773,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_3_quote"
                 >
                   "Soluții complete de la pregătirea terenului până la finisaje.
                   Logistica proprie și materialele de calitate au făcut
@@ -1631,6 +1781,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_3_meta"
                   >Companie de Construcții</span
                 >
               </div>
@@ -1672,6 +1823,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_4_quote"
                 >
                   "Profesionalism și dedicare în realizarea halei noastre
                   industriale. DARION-NORD a demonstrat experiență solidă în
@@ -1679,6 +1831,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_4_meta"
                   >Producător Industrial, Bălți</span
                 >
               </div>
@@ -1720,6 +1873,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_5_quote"
                 >
                   "Execuția ireproșabilă a instalațiilor tehnologice pentru
                   fabrica noastră. Echipa DARION-NORD a înțeles perfect
@@ -1727,6 +1881,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_5_meta"
                   >Industria Băuturilor</span
                 >
               </div>
@@ -1768,6 +1923,7 @@
                 </div>
                 <p
                   class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1"
+                  data-i18n="testim_6_quote"
                 >
                   "Partener de încredere pentru extinderea facilităților noastre
                   de producție. Calitatea construcțiilor și respectarea
@@ -1775,6 +1931,7 @@
                 </p>
                 <span
                   class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200"
+                  data-i18n="testim_6_meta"
                   >Companie de Producție</span
                 >
               </div>
@@ -1783,6 +1940,7 @@
           <button
             class="testimonial-next shrink-0 w-[52px] h-[52px] max-sm:w-[42px] max-sm:h-[42px] rounded-full bg-primary text-white border-none cursor-pointer flex items-center justify-center transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] z-[2] hover:bg-accent hover:text-primary hover:scale-[1.08] hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]"
             aria-label="Următorul"
+            data-i18n-aria="testim_next_aria"
           >
             <svg
               width="24"
@@ -1804,11 +1962,13 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+            data-i18n="clients_title"
           >
             Clienți de Încredere
           </h2>
           <p
             class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="clients_sub"
           >
             Colaborăm cu companii de top din Moldova și regiune
           </p>
@@ -1948,12 +2108,14 @@
       <div class="relative z-[2] max-w-[1200px] mx-auto px-6 py-[100px]">
         <h2
           class="text-[clamp(2.2rem,4vw,3.2rem)] font-black text-white mb-5 tracking-tight leading-[1.2] text-center animate-on-scroll"
+          data-i18n="cta_title"
         >
           Ai un proiect în minte?
         </h2>
         <p
           class="text-[1.2rem] text-white/85 mb-12 max-w-[700px] mx-auto leading-[1.7] text-center animate-on-scroll"
           style="--delay: 0.1s"
+          data-i18n="cta_desc"
         >
           Contactează-ne astăzi și primești o consultație gratuită! Transformăm
           viziunea ta în realitate cu soluții complete și profesionale.
@@ -1966,7 +2128,7 @@
             href="#contact"
             class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-light text-primary px-10 py-[18px] font-bold text-[1.05rem] rounded-lg transition-all duration-300 shadow-[0_4px_20px_rgba(240,185,11,0.3)] hover:shadow-[0_8px_30px_rgba(240,185,11,0.5)] hover:-translate-y-[3px] justify-center"
           >
-            Solicită Ofertă
+            <span data-i18n="cta_btn_offer">Solicită Ofertă</span>
             <svg
               width="20"
               height="20"
@@ -1997,7 +2159,7 @@
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
               />
             </svg>
-            Sună Acum
+            <span data-i18n="cta_btn_call">Sună Acum</span>
           </a>
         </div>
       </div>
@@ -2008,15 +2170,18 @@
         <div class="text-center mb-[60px] animate-on-scroll">
           <span
             class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent bg-accent/15 px-4 py-1.5 rounded-full mb-4"
+            data-i18n="contact_badge"
             >Contact</span
           >
           <h2
             class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-white mb-3 tracking-tight leading-[1.2]"
+            data-i18n="contact_title"
           >
             Hai să discutăm!
           </h2>
           <p
             class="text-[1.05rem] text-white/60 max-w-[550px] mx-auto leading-[1.7]"
+            data-i18n="contact_sub"
           >
             Vrei un deviz gratuit? Completează formularul sau contactează-ne
             direct.
@@ -2051,11 +2216,13 @@
               <div>
                 <h4
                   class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider"
+                  data-i18n="contact_address_label"
                 >
                   Adresa
                 </h4>
                 <p
                   class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300"
+                  data-i18n="contact_address_text"
                 >
                   Strada Smolean, nr. 46, Bălți, Republica Moldova
                 </p>
@@ -2085,6 +2252,7 @@
               <div>
                 <h4
                   class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider"
+                  data-i18n="contact_email_label"
                 >
                   Email
                 </h4>
@@ -2118,6 +2286,7 @@
               <div>
                 <h4
                   class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider"
+                  data-i18n="contact_phone_label"
                 >
                   Telefon
                 </h4>
@@ -2149,11 +2318,13 @@
               <div class="relative schedule-wrapper">
                 <h4
                   class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider"
+                  data-i18n="contact_schedule_label"
                 >
                   Program
                 </h4>
                 <p
                   class="schedule-toggle cursor-pointer inline-flex items-center gap-1.5 text-[0.95rem] text-white/80 transition-colors duration-300 hover:text-accent"
+                  data-i18n="contact_schedule_text"
                 >
                   Luni - Vineri: 08:00 - 17:00
                   <svg
@@ -2171,7 +2342,7 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Luni</span
+                    <span data-i18n="sched_mon">Luni</span
                     ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
@@ -2179,7 +2350,7 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Marți</span
+                    <span data-i18n="sched_tue">Marți</span
                     ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
@@ -2187,7 +2358,7 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Miercuri</span
+                    <span data-i18n="sched_wed">Miercuri</span
                     ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
@@ -2195,7 +2366,7 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Joi</span
+                    <span data-i18n="sched_thu">Joi</span
                     ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
@@ -2203,7 +2374,7 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Vineri</span
+                    <span data-i18n="sched_fri">Vineri</span
                     ><span class="font-semibold text-accent"
                       >08:00 – 17:00</span
                     >
@@ -2211,14 +2382,22 @@
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"
                   >
-                    <span>Sâmbătă</span
-                    ><span class="font-semibold text-red-500">Închis</span>
+                    <span data-i18n="sched_sat">Sâmbătă</span
+                    ><span
+                      class="font-semibold text-red-500"
+                      data-i18n="sched_closed"
+                      >Închis</span
+                    >
                   </div>
                   <div
                     class="flex justify-between py-1.5 text-sm text-white/70"
                   >
-                    <span>Duminică</span
-                    ><span class="font-semibold text-red-500">Închis</span>
+                    <span data-i18n="sched_sun">Duminică</span
+                    ><span
+                      class="font-semibold text-red-500"
+                      data-i18n="sched_closed"
+                      >Închis</span
+                    >
                   </div>
                 </div>
               </div>
@@ -2254,6 +2433,7 @@
                 <label
                   for="name"
                   class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
+                  data-i18n="form_name_label"
                   >Numele tău</label
                 >
                 <input
@@ -2261,6 +2441,7 @@
                   id="name"
                   name="name"
                   placeholder="ex: Ion Popescu"
+                  data-i18n-placeholder="form_name_placeholder"
                   required
                   class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400"
                 />
@@ -2269,6 +2450,7 @@
                 <label
                   for="email"
                   class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
+                  data-i18n="form_email_label"
                   >Email</label
                 >
                 <input
@@ -2276,6 +2458,7 @@
                   id="email"
                   name="email"
                   placeholder="ex: ion@email.com"
+                  data-i18n-placeholder="form_email_placeholder"
                   required
                   class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400"
                 />
@@ -2286,6 +2469,7 @@
                 <label
                   for="phone"
                   class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
+                  data-i18n="form_phone_label"
                   >Telefon</label
                 >
                 <input
@@ -2293,6 +2477,7 @@
                   id="phone"
                   name="phone"
                   placeholder="ex: +373 69 570 971"
+                  data-i18n-placeholder="form_phone_placeholder"
                   class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400"
                 />
               </div>
@@ -2300,6 +2485,7 @@
                 <label
                   for="service"
                   class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
+                  data-i18n="form_service_label"
                   >Serviciul dorit</label
                 >
                 <select
@@ -2307,12 +2493,27 @@
                   name="service"
                   class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)]"
                 >
-                  <option value="">Selectează...</option>
-                  <option value="civil">Construcții Civile</option>
-                  <option value="metalice">Construcții Metalice</option>
-                  <option value="materiale">Materiale de Construcție</option>
-                  <option value="inginerie">Inginerie Structurală</option>
-                  <option value="altele">Altele</option>
+                  <option value="" data-i18n="form_service_default">
+                    Selectează...
+                  </option>
+                  <option value="civil" data-i18n="form_service_civil">
+                    Construcții Civile
+                  </option>
+                  <option value="metalice" data-i18n="form_service_metal">
+                    Construcții Metalice
+                  </option>
+                  <option value="materiale" data-i18n="form_service_materials">
+                    Materiale de Construcție
+                  </option>
+                  <option
+                    value="inginerie"
+                    data-i18n="form_service_engineering"
+                  >
+                    Inginerie Structurală
+                  </option>
+                  <option value="altele" data-i18n="form_service_other">
+                    Altele
+                  </option>
                 </select>
               </div>
             </div>
@@ -2320,12 +2521,14 @@
               <label
                 for="message"
                 class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5"
+                data-i18n="form_message_label"
                 >Detalii despre proiect</label
               >
               <textarea
                 id="message"
                 name="message"
                 placeholder="Descrie pe scurt proiectul tău..."
+                data-i18n-placeholder="form_message_placeholder"
                 rows="5"
                 class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400 flex-1 min-h-[80px]"
               ></textarea>
@@ -2334,7 +2537,7 @@
               type="submit"
               class="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-4 font-bold text-base rounded-lg transition-all duration-300 border-none cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]"
             >
-              Trimite Mesaj
+              <span data-i18n="form_submit">Trimite Mesaj</span>
               <svg
                 width="20"
                 height="20"
@@ -2366,7 +2569,10 @@
               <img src="assets/logo1.png" alt="Logo Darion-Nord" class="h-9" />
               <span>DARION-NORD</span>
             </div>
-            <p class="text-sm leading-[1.7] text-white/50">
+            <p
+              class="text-sm leading-[1.7] text-white/50"
+              data-i18n="footer_desc"
+            >
               Construcții profesionale și soluții complete pentru proiectul tău
               în Republica Moldova.
             </p>
@@ -2374,6 +2580,7 @@
           <div>
             <h4
               class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
+              data-i18n="footer_services_heading"
             >
               Servicii
             </h4>
@@ -2382,6 +2589,7 @@
                 <a
                   href="#servicii"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_svc_1"
                   >Construcții Civile</a
                 >
               </li>
@@ -2389,6 +2597,7 @@
                 <a
                   href="#servicii"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_svc_2"
                   >Construcții Metalice</a
                 >
               </li>
@@ -2396,6 +2605,7 @@
                 <a
                   href="#servicii"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_svc_3"
                   >Materiale de Construcție</a
                 >
               </li>
@@ -2403,6 +2613,7 @@
                 <a
                   href="#servicii"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_svc_4"
                   >Inginerie Structurală</a
                 >
               </li>
@@ -2411,6 +2622,7 @@
           <div>
             <h4
               class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
+              data-i18n="footer_company_heading"
             >
               Companie
             </h4>
@@ -2419,6 +2631,7 @@
                 <a
                   href="#despre"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_comp_1"
                   >Despre Noi</a
                 >
               </li>
@@ -2426,6 +2639,7 @@
                 <a
                   href="#proces"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_comp_2"
                   >Cum Lucrăm</a
                 >
               </li>
@@ -2433,6 +2647,7 @@
                 <a
                   href="#proiecte"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_comp_3"
                   >Proiecte</a
                 >
               </li>
@@ -2440,6 +2655,7 @@
                 <a
                   href="#contact"
                   class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block"
+                  data-i18n="footer_comp_4"
                   >Contact</a
                 >
               </li>
@@ -2448,6 +2664,7 @@
           <div>
             <h4
               class="mb-5 text-sm font-bold tracking-wider text-white uppercase"
+              data-i18n="footer_quick_contact"
             >
               Contact Rapid
             </h4>
@@ -2517,6 +2734,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="transition-all duration-300 text-white/50 hover:text-accent"
+                  data-i18n="contact_address_text"
                   >Strada Smolean, nr. 46, Bălți, Republica Moldova</a
                 >
               </li>
@@ -2525,8 +2743,8 @@
         </div>
         <div class="text-center py-5 text-[0.82rem] text-white/30">
           <p>
-            &copy; <span id="currentYear"></span> S.C. DARION-NORD S.R.L. Toate
-            drepturile rezervate.
+            &copy; <span id="currentYear"></span> S.C. DARION-NORD S.R.L.
+            <span data-i18n="footer_copyright">drepturile rezervate.</span>
           </p>
         </div>
       </div>
@@ -2609,7 +2827,11 @@
         e.preventDefault();
         const btn = contactForm.querySelector('button[type="submit"]');
         const originalText = btn.innerHTML;
-        btn.innerHTML = "Se trimite...";
+        const translate = (key, fallback) => {
+          return typeof I18n !== "undefined" ? I18n.t(key) : fallback;
+        };
+
+        btn.textContent = translate("form_sending", "Se trimite...");
         btn.disabled = true;
 
         try {
@@ -2619,21 +2841,30 @@
           });
           const data = await response.json();
           if (data.success) {
-            btn.innerHTML = "✓ Mesaj trimis cu succes!";
+            btn.textContent = translate(
+              "form_success",
+              "Mesaj trimis cu succes!",
+            );
             contactForm.reset();
             setTimeout(() => {
               btn.innerHTML = originalText;
               btn.disabled = false;
             }, 3000);
           } else {
-            btn.innerHTML = "✗ Eroare. Încearcă din nou.";
+            btn.textContent = translate(
+              "form_error",
+              "Eroare. Încearcă din nou.",
+            );
             setTimeout(() => {
               btn.innerHTML = originalText;
               btn.disabled = false;
             }, 3000);
           }
         } catch (error) {
-          btn.innerHTML = "✗ Eroare. Încearcă din nou.";
+          btn.textContent = translate(
+            "form_error",
+            "Eroare. Încearcă din nou.",
+          );
           setTimeout(() => {
             btn.innerHTML = originalText;
             btn.disabled = false;
@@ -2731,7 +2962,9 @@
     <div class="mascot-container">
       <div class="mascot-bubble">
         <p class="m-0 text-sm font-semibold leading-relaxed text-primary">
-          👷 Salut! Ai nevoie de o construcție solidă? Suntem aici!
+          <span data-i18n="mascot_text">
+            👷 Salut! Ai nevoie de o construcție solidă? Suntem aici!
+          </span>
         </p>
       </div>
       <label for="mascot-toggle" class="mascot-figure-label">
@@ -2761,7 +2994,7 @@
           <line x1="22" y1="2" x2="11" y2="13" />
           <polygon points="22 2 15 22 11 13 2 9 22 2" />
         </svg>
-        Solicită Ofertă Gratuită
+        <span data-i18n="mobile_cta_text">Solicită Ofertă Gratuită</span>
       </a>
     </div>
   </body>
