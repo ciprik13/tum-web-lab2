@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 export interface Props {
   title?: string;
   lang?: string;
@@ -20,13 +22,12 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body class="overflow-x-hidden bg-white font-inter text-slate-700">
 
     <!-- NAV SHELL -->
     <header id="navbar" class="fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3.5">
-      <!-- nav content will be migrated in PR 3 (base layout) and populated per-section -->
     </header>
 
     <!-- PAGE CONTENT -->
@@ -36,8 +37,24 @@ const {
 
     <!-- FOOTER SHELL -->
     <footer class="text-white bg-primary">
-      <!-- footer content will be migrated in its own PR -->
     </footer>
 
+    <script>
+      // Animate on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>

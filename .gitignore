@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Build output (generated file - will be rebuilt)
-style.css
-
 # OS files
 .DS_Store
 Thumbs.db
