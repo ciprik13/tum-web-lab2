@@ -172,3 +172,49 @@
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    const track = document.querySelector('.testimonials-track');
+    const prevBtn = document.querySelector('.testimonial-prev');
+    const nextBtn = document.querySelector('.testimonial-next');
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const originals = Array.from(track.querySelectorAll('.testimonial-card'));
+    const n = originals.length;
+    originals.slice().reverse().forEach((c) => track.insertBefore(c.cloneNode(true), track.firstChild));
+    originals.forEach((c) => track.appendChild(c.cloneNode(true)));
+
+    let current = n;
+
+    function getVisible() {
+      if (window.innerWidth <= 600) return 1;
+      if (window.innerWidth <= 992) return 2;
+      return 3;
+    }
+
+    function getCardWidth() {
+      const visible = getVisible();
+      return (track.parentElement.offsetWidth - 24 * (visible - 1)) / visible;
+    }
+
+    function setPosition(animate) {
+      const cardWidth = getCardWidth();
+      track.querySelectorAll('.testimonial-card').forEach((c) => {
+        c.style.flex = '0 0 ' + cardWidth + 'px';
+      });
+      track.style.transition = animate ? 'transform 0.45s cubic-bezier(0.4, 0, 0.2, 1)' : 'none';
+      track.style.transform = 'translateX(-' + (current * (cardWidth + 24)) + 'px)';
+    }
+
+    track.addEventListener('transitionend', () => {
+      if (current >= 2 * n) { current -= n; setPosition(false); }
+      else if (current < n) { current += n; setPosition(false); }
+    });
+
+    nextBtn.addEventListener('click', () => { current++; setPosition(true); });
+    prevBtn.addEventListener('click', () => { current--; setPosition(true); });
+    window.addEventListener('resize', () => setPosition(false));
+    setPosition(false);
+  })();
+</script>
