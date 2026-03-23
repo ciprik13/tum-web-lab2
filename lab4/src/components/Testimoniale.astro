@@ -1,0 +1,174 @@
+---
+// Testimoniale.astro
+---
+
+<!-- Testimoniale -->
+<section id="proiecte" class="py-[100px] max-md:py-[60px]">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="text-center mb-[60px] animate-on-scroll">
+      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4" data-i18n="testim_badge">Portofoliu</span>
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]" data-i18n="testim_title">Ce spun clienții noștri</h2>
+      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]" data-i18n="testim_sub">Proiecte finalizate cu succes</p>
+    </div>
+
+    <div class="flex items-center gap-4 max-sm:gap-2.5 relative">
+      <button class="testimonial-prev shrink-0 w-[52px] h-[52px] max-sm:w-[42px] max-sm:h-[42px] rounded-full bg-primary text-white border-none cursor-pointer flex items-center justify-center transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] z-[2] hover:bg-accent hover:text-primary hover:scale-[1.08] hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]" aria-label="Anterior" data-i18n-aria="testim_prev_aria">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="flex-1 overflow-hidden">
+        <div class="testimonials-track">
+          <!-- Card 1 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-agroelit.png" alt="AGROelit" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">AG</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">AGROelit</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_1_quote">"Colaborarea cu DARION-NORD pentru construcția depozitului nostru agricol a fost excepțională. Echipa lor profesionistă a livrat proiectul la timp și cu o calitate impecabilă."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_1_meta">Companie Agricolă, Regiunea Nord</span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-sudzucker.png" alt="Südzucker" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">SZ</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">Südzucker</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_2_quote">"DARION-NORD a executat lucrările de construcție conform standardelor industriale internaționale. Respectarea riguroasă a normativelor tehnice și termenelor ne-a impresionat."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_2_meta">Producător Industrial</span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-marsharcon.png" alt="Marsharcon" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">MC</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">Marsharcon</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_3_quote">"Soluții complete de la pregătirea terenului până la finisaje. Logistica proprie și materialele de calitate au făcut diferența în realizarea proiectului nostru industrial."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_3_meta">Companie de Construcții</span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-floris.png" alt="Floris" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">FL</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">Floris</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_4_quote">"Profesionalism și dedicare în realizarea halei noastre industriale. DARION-NORD a demonstrat experiență solidă în construcțiile metalice și atenție la detalii."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_4_meta">Producător Industrial, Bălți</span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-beermaster.png" alt="Beermaster Brewery" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">BM</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">Beermaster Brewery</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_5_quote">"Execuția ireproșabilă a instalațiilor tehnologice pentru fabrica noastră. Echipa DARION-NORD a înțeles perfect cerințele specifice ale industriei noastre."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_5_meta">Industria Băuturilor</span>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="testimonial-card bg-white p-8 rounded-2xl border border-slate-200 transition-all duration-300 flex flex-col shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)]">
+            <div class="flex items-center gap-3.5 mb-5">
+              <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shrink-0 overflow-hidden border-2 border-slate-200 p-1.5">
+                <img src="/assets/logo-rusnac.png" alt="Rusnac" class="object-contain w-full h-full" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="w-12 h-12 rounded-full bg-primary text-accent flex items-center justify-center font-bold text-[0.85rem] shrink-0" style="display:none">RN</div>
+              </div>
+              <div>
+                <strong class="block text-base text-primary mb-0.5">Rusnac</strong>
+                <div class="text-accent text-[0.95rem] tracking-[2px] leading-none">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-[0.95rem] leading-[1.8] text-slate-500 mb-5 italic flex-1" data-i18n="testim_6_quote">"Partener de încredere pentru extinderea facilităților noastre de producție. Calitatea construcțiilor și respectarea bugetului au fost exemplare."</p>
+            <span class="text-[0.82rem] text-slate-400 font-medium pt-4 border-t border-slate-200" data-i18n="testim_6_meta">Companie de Producție</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="testimonial-next shrink-0 w-[52px] h-[52px] max-sm:w-[42px] max-sm:h-[42px] rounded-full bg-primary text-white border-none cursor-pointer flex items-center justify-center transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] z-[2] hover:bg-accent hover:text-primary hover:scale-[1.08] hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]" aria-label="Următorul" data-i18n-aria="testim_next_aria">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Clienți Carousel -->
+<section class="py-20 max-md:py-[60px] bg-bg-alt overflow-hidden">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="text-center mb-[60px] animate-on-scroll">
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]" data-i18n="clients_title">Clienți de Încredere</h2>
+      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]" data-i18n="clients_sub">Colaborăm cu companii de top din Moldova și regiune</p>
+    </div>
+    <div class="clients-carousel mt-[50px] overflow-hidden relative">
+      <div class="clients-track">
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-sudzucker.png" alt="Südzucker" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-floris.png" alt="Floris" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-agroelit.png" alt="AGROelit" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-beermaster.png" alt="Beermaster Brewery" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-rusnac.png" alt="Rusnac" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-marsharcon.png" alt="Marsharcon" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-sudzucker.png" alt="Südzucker" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-floris.png" alt="Floris" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-agroelit.png" alt="AGROelit" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-beermaster.png" alt="Beermaster Brewery" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-rusnac.png" alt="Rusnac" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+        <div class="shrink-0 w-[260px] max-lg:w-[160px] max-md:w-[140px] h-[160px] max-lg:h-[100px] max-md:h-[90px] bg-white rounded-xl flex items-center justify-center p-8 border border-slate-200 transition-all duration-300 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:-translate-y-1.5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:border-accent"><img src="/assets/logo-marsharcon.png" alt="Marsharcon" class="max-w-full max-h-[95px] max-lg:max-h-[60px] max-md:max-h-[50px] object-contain grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100" onerror="this.src='/assets/logo1.png'" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner relative overflow-hidden min-h-[500px] flex items-center">
+  <div class="relative z-[2] max-w-[1200px] mx-auto px-6 py-[100px]">
+    <h2 class="text-[clamp(2.2rem,4vw,3.2rem)] font-black text-white mb-5 tracking-tight leading-[1.2] text-center animate-on-scroll" data-i18n="cta_title">Ai un proiect în minte?</h2>
+    <p class="text-[1.2rem] text-white/85 mb-12 max-w-[700px] mx-auto leading-[1.7] text-center animate-on-scroll" style="--delay: 0.1s" data-i18n="cta_desc">Contactează-ne astăzi și primești o consultație gratuită! Transformăm viziunea ta în realitate cu soluții complete și profesionale.</p>
+    <div class="flex gap-5 justify-center flex-wrap mb-[60px] max-md:flex-col max-md:items-stretch animate-on-scroll" style="--delay: 0.2s">
+      <a href="#contact" class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-light text-primary px-10 py-[18px] font-bold text-[1.05rem] rounded-lg transition-all duration-300 shadow-[0_4px_20px_rgba(240,185,11,0.3)] hover:shadow-[0_8px_30px_rgba(240,185,11,0.5)] hover:-translate-y-[3px] justify-center">
+        <span data-i18n="cta_btn_offer">Solicită Ofertă</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+      <a href="tel:+37369570971" class="inline-flex items-center gap-2.5 text-white border-2 border-white/50 px-10 py-[18px] font-semibold text-[1.05rem] rounded-lg transition-all duration-300 bg-white/5 backdrop-blur-[10px] hover:bg-white/15 hover:border-white hover:-translate-y-[3px] justify-center">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span data-i18n="cta_btn_call">Sună Acum</span>
+      </a>
+    </div>
+  </div>
+</section>
