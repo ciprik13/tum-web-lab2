@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Nav from '../components/Nav.astro';
 
 export interface Props {
   title?: string;
@@ -26,9 +27,7 @@ const {
   </head>
   <body class="overflow-x-hidden bg-white font-inter text-slate-700">
 
-    <!-- NAV SHELL -->
-    <header id="navbar" class="fixed top-0 inset-x-0 z-[1000] bg-white/95 backdrop-blur-[20px] border-b border-transparent py-3.5">
-    </header>
+    <Nav />
 
     <!-- PAGE CONTENT -->
     <main>
