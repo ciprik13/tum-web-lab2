@@ -1,0 +1,137 @@
+---
+// Despre.astro
+---
+
+<section id="despre" class="py-[100px] max-md:py-[60px]">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="text-center mb-[60px] animate-on-scroll">
+      <span
+        class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+        data-i18n="about_badge"
+        >Despre Noi</span
+      >
+      <h2
+        class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+        data-i18n="about_title"
+      >
+        Construim viitorul Moldovei
+      </h2>
+      <p
+        class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+        data-i18n="about_sub"
+      >
+        Din 2007, partenerul tău de încredere în construcții
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-10">
+      <!-- Main Image + Text Block -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[50px] max-lg:gap-[30px] items-center animate-on-scroll">
+        <div class="about-hero-bg relative rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+            alt="Echipa Darion-Nord"
+            class="w-full h-[500px] max-lg:h-[400px] max-md:h-[350px] max-sm:h-[280px] object-cover block"
+          />
+          <div class="absolute flex gap-4 bottom-6 left-6 right-6 max-md:flex-col max-md:gap-3">
+            <div class="bg-primary/[0.92] backdrop-blur-[10px] py-4 px-6 rounded-xl flex-1 text-center border border-accent/30">
+              <strong class="block text-[1.8rem] font-extrabold text-accent mb-1">2007</strong>
+              <span class="text-[0.8rem] text-white/70 uppercase tracking-wider" data-i18n="stat_founded_label2">Anul fondării</span>
+            </div>
+            <div class="bg-primary/[0.92] backdrop-blur-[10px] py-4 px-6 rounded-xl flex-1 text-center border border-accent/30">
+              <strong class="block text-[1.8rem] font-extrabold text-accent mb-1">200+</strong>
+              <span class="text-[0.8rem] text-white/70 uppercase tracking-wider" data-i18n="stat_projects_label2">Proiecte finalizate</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="text-[1.6rem] font-extrabold text-primary mb-5 leading-[1.3]"
+            data-i18n="about_story_title"
+          >
+            O poveste de succes în construcții de peste 18 ani
+          </h3>
+          <p class="text-slate-500 leading-[1.8] mb-4" data-i18n-html="about_story_p1">
+            Fondată în 2007 în <strong>Bălți</strong>, DARION-NORD s-a
+            dezvoltat constant, devenind un lider regional în construcții
+            industriale și civile. Portofoliul nostru include peste 200 de
+            proiecte finalizate cu succes.
+          </p>
+          <p class="text-slate-500 leading-[1.8] mb-4" data-i18n="about_story_p2">
+            Investim continuu în echipamente moderne și tehnologii de ultimă
+            generație pentru a oferi clienților noștri cele mai eficiente
+            soluții constructive pe piața din Moldova.
+          </p>
+          <div class="flex flex-col gap-3 mt-7">
+            <div class="flex items-center gap-3 font-semibold text-slate-700">
+              <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span data-i18n="about_feat_1">Certificări ISO pentru calitate</span>
+            </div>
+            <div class="flex items-center gap-3 font-semibold text-slate-700">
+              <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+              </svg>
+              <span data-i18n="about_feat_2">Personal certificat și experimentat</span>
+            </div>
+            <div class="flex items-center gap-3 font-semibold text-slate-700">
+              <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span data-i18n="about_feat_3">Monitorizare continuă a proiectelor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two Column Features -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] animate-on-scroll">
+        <div class="feature-box-1 relative rounded-xl overflow-hidden h-[280px] max-md:h-[240px] shadow-[0_4px_14px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+          <img
+            src="https://images.unsplash.com/photo-1590496793907-3a7b70f7d1c5?w=600&q=80"
+            alt="Depozite proprii"
+            class="block object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+          />
+          <div class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient">
+            <h4 class="text-[1.25rem] font-bold text-white mb-2" data-i18n="feature_box_1_title">Logistică Proprie</h4>
+            <p class="text-sm leading-relaxed text-white/80" data-i18n="feature_box_1_desc">Depozite în Bălți și flotă de transport pentru livrări rapide</p>
+          </div>
+        </div>
+        <div class="feature-box-2 relative rounded-xl overflow-hidden h-[280px] max-md:h-[240px] shadow-[0_4px_14px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+            alt="Prezență națională"
+            class="block object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+          />
+          <div class="absolute bottom-0 left-0 right-0 px-6 pt-8 pb-6 feature-box-gradient">
+            <h4 class="text-[1.25rem] font-bold text-white mb-2" data-i18n="feature_box_2_title">Acoperire Națională</h4>
+            <p class="text-sm leading-relaxed text-white/80" data-i18n="feature_box_2_desc">Operăm din Bălți pentru toată Moldova</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mobile-only stats banner -->
+<div class="px-4 py-5 md:hidden bg-primary">
+  <div class="flex items-center justify-around text-center">
+    <div>
+      <strong class="block text-2xl font-extrabold text-accent">2007</strong>
+      <span class="text-[0.7rem] text-white/60 uppercase tracking-wider" data-i18n="mobile_stat_founded">Fondată</span>
+    </div>
+    <div class="w-px h-10 bg-white/15"></div>
+    <div>
+      <strong class="block text-2xl font-extrabold text-accent">200+</strong>
+      <span class="text-[0.7rem] text-white/60 uppercase tracking-wider" data-i18n="mobile_stat_projects">Proiecte</span>
+    </div>
+    <div class="w-px h-10 bg-white/15"></div>
+    <div>
+      <strong class="block text-2xl font-extrabold text-accent">100%</strong>
+      <span class="text-[0.7rem] text-white/60 uppercase tracking-wider" data-i18n="mobile_stat_satisfaction">Satisfacție</span>
+    </div>
+  </div>
+</div>
