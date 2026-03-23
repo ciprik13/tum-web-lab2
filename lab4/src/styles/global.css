@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0f1d35;
+  --color-primary-light: #1a2d4d;
+  --color-primary-dark: #0a1425;
+  --color-accent: #f0b90b;
+  --color-accent-light: #ffd54f;
+  --color-accent-dark: #c99700;
+  --color-bg-alt: #f7f8fc;
+
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
