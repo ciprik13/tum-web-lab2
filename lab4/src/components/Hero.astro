@@ -1,5 +1,9 @@
 ---
 // Hero.astro
+export interface Props {
+  data: Record<string, string>;
+}
+const { data } = Astro.props;
 ---
 
 <section
@@ -16,172 +20,67 @@
   </div>
 
   <div class="max-w-[1200px] mx-auto px-6">
-    <div
-      class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-[60px] items-center relative z-[2]"
-    >
+    <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-[60px] items-center relative z-[2]">
       <!-- Left -->
       <div class="text-left max-lg:text-center animate-on-scroll">
-        <div
-          class="inline-block bg-accent/15 text-accent px-5 py-2 rounded-full text-[0.85rem] font-semibold tracking-wider uppercase mb-6 border border-accent/20"
-          data-i18n="hero_badge"
-        >
-          Construcții & Inginerie Structurală
+        <div class="inline-block bg-accent/15 text-accent px-5 py-2 rounded-full text-[0.85rem] font-semibold tracking-wider uppercase mb-6 border border-accent/20" data-i18n="hero_badge">
+          {data.hero_badge}
         </div>
-        <h1
-          class="text-[clamp(2.2rem,5vw,3.5rem)] max-md:text-[1.8rem] font-black text-white leading-[1.15] mb-6 tracking-tight"
-        >
-          <span data-i18n="hero_title_1">Construcții Profesionale</span>
-          <br /><span
-            class="text-transparent bg-gradient-to-br from-accent to-accent-light bg-clip-text"
-            data-i18n="hero_title_2"
-            >și Soluții Complete</span
-          ><br />
-          <span data-i18n="hero_title_3">pentru Proiectul Tău</span>
+        <h1 class="text-[clamp(2.2rem,5vw,3.5rem)] max-md:text-[1.8rem] font-black text-white leading-[1.15] mb-6 tracking-tight">
+          <span data-i18n="hero_title_1">{data.hero_title_1}</span>
+          <br /><span class="text-transparent bg-gradient-to-br from-accent to-accent-light bg-clip-text" data-i18n="hero_title_2">{data.hero_title_2}</span><br />
+          <span data-i18n="hero_title_3">{data.hero_title_3}</span>
         </h1>
-        <p
-          class="text-[1.05rem] text-white/75 mb-9 leading-[1.8] max-w-[550px] max-lg:mx-auto"
-          data-i18n="hero_desc"
-        >
-          De la logistică proprie și furnizarea materialelor brute, până la
-          proiectarea și execuția sistemelor industriale complexe. Soluții
-          integrate sub standarde tehnice riguroase, cu sediul central în Bălți.
+        <p class="text-[1.05rem] text-white/75 mb-9 leading-[1.8] max-w-[550px] max-lg:mx-auto" data-i18n="hero_desc">
+          {data.hero_desc}
         </p>
-        <div
-          class="flex gap-4 flex-wrap mb-[60px] max-md:flex-col max-md:items-center"
-        >
-          <a
-            href="#contact"
-            class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-3.5 font-bold text-[0.95rem] rounded-lg transition-all duration-300 border-none cursor-pointer tracking-tight hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]"
-          >
-            <span data-i18n="hero_cta_offer">Solicită Ofertă</span>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+        <div class="flex gap-4 flex-wrap mb-[60px] max-md:flex-col max-md:items-center">
+          <a href="#contact" class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-3.5 font-bold text-[0.95rem] rounded-lg transition-all duration-300 border-none cursor-pointer tracking-tight hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]">
+            <span data-i18n="hero_cta_offer">{data.hero_cta_offer}</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a
-            href="#servicii"
-            class="inline-flex items-center gap-2.5 bg-white/10 text-white px-8 py-3.5 font-semibold text-[0.95rem] rounded-lg transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-0.5"
-            data-i18n="hero_cta_services"
-            >Descoperă Serviciile</a
-          >
+          <a href="#servicii" class="inline-flex items-center gap-2.5 bg-white/10 text-white px-8 py-3.5 font-semibold text-[0.95rem] rounded-lg transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-0.5" data-i18n="hero_cta_services">{data.hero_cta_services}</a>
         </div>
       </div>
 
       <!-- Right -->
       <div class="flex flex-col gap-6 animate-on-scroll">
         <div class="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-          <div
-            class="hero-stat-card hero-stat-card-1 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] col-span-2 max-md:col-span-1 max-lg:col-span-1"
-          >
-            <strong
-              class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight"
-              >2007</strong
-            >
-            <span
-              class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
-              data-i18n="stat_founded_label"
-              >Anul Fondării</span
-            >
+          <div class="hero-stat-card hero-stat-card-1 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] col-span-2 max-md:col-span-1 max-lg:col-span-1">
+            <strong class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight">{data.stat_founded}</strong>
+            <span class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold" data-i18n="stat_founded_label">{data.stat_founded_label}</span>
           </div>
-          <div
-            class="hero-stat-card hero-stat-card-2 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
-          >
-            <strong
-              class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight"
-              >200+</strong
-            >
-            <span
-              class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
-              data-i18n="stat_projects_label"
-              >Proiecte Finalizate</span
-            >
+          <div class="hero-stat-card hero-stat-card-2 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
+            <strong class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight">{data.stat_projects}</strong>
+            <span class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold" data-i18n="stat_projects_label">{data.stat_projects_label}</span>
           </div>
-          <div
-            class="hero-stat-card hero-stat-card-3 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
-          >
-            <strong
-              class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight"
-              >100%</strong
-            >
-            <span
-              class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold"
-              data-i18n="stat_clients_label"
-              >Clienți Mulțumiți</span
-            >
+          <div class="hero-stat-card hero-stat-card-3 relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-6 text-center transition-all duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
+            <strong class="block text-[2.2rem] max-sm:text-[1.8rem] font-extrabold text-accent mb-1.5 tracking-tight">{data.stat_clients}</strong>
+            <span class="text-[0.85rem] text-white/60 uppercase tracking-wider font-semibold" data-i18n="stat_clients_label">{data.stat_clients_label}</span>
           </div>
         </div>
-        <div
-          class="hero-features-bg relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-5 flex flex-col gap-3.5 overflow-hidden"
-        >
-          <div
-            class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]"
-          >
-            <svg
-              class="text-accent shrink-0"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-            >
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <span data-i18n="hero_feat_1">Depozite proprii în Bălți</span>
+        <div class="hero-features-bg relative backdrop-blur-[20px] border-2 border-white/35 rounded-xl p-5 flex flex-col gap-3.5 overflow-hidden">
+          <div class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]">
+            <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span data-i18n="hero_feat_1">{data.hero_feat_1}</span>
           </div>
-          <div
-            class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]"
-          >
-            <svg
-              class="text-accent shrink-0"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-            >
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <span data-i18n="hero_feat_2">Echipă cu 15+ ani experiență</span>
+          <div class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]">
+            <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span data-i18n="hero_feat_2">{data.hero_feat_2}</span>
           </div>
-          <div
-            class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]"
-          >
-            <svg
-              class="text-accent shrink-0"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-            >
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <span data-i18n="hero_feat_3">Soluții complete la cheie</span>
+          <div class="flex items-center gap-3 text-white/85 text-[0.95rem] font-medium relative z-[1]">
+            <svg class="text-accent shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span data-i18n="hero_feat_3">{data.hero_feat_3}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div
-    class="absolute bottom-[30px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-[0.7rem] tracking-[0.15em] uppercase"
-  >
+  <div class="absolute bottom-[30px] left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-[0.7rem] tracking-[0.15em] uppercase">
     <div class="w-px h-10 scroll-line bg-white/30"></div>
   </div>
 </section>

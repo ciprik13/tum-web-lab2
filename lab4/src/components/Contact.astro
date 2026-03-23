@@ -1,0 +1,285 @@
+---
+// Contact.astro
+---
+
+<section id="contact" class="py-[100px] max-md:py-[60px] bg-primary">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="text-center mb-[60px] animate-on-scroll">
+      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent bg-accent/15 px-4 py-1.5 rounded-full mb-4" data-i18n="contact_badge">Contact</span>
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-white mb-3 tracking-tight leading-[1.2]" data-i18n="contact_title">Hai să discutăm!</h2>
+      <p class="text-[1.05rem] text-white/60 max-w-[550px] mx-auto leading-[1.7]" data-i18n="contact_sub">Vrei un deviz gratuit? Completează formularul sau contactează-ne direct.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-[50px] items-stretch">
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-between gap-5 animate-on-scroll">
+        <a class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1 no-underline text-inherit cursor-pointer" href="https://maps.app.goo.gl/BkEHVjeLKKb91jHb7" target="_blank" rel="noopener noreferrer">
+          <div class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_address_label">Adresa</h4>
+            <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300" data-i18n="contact_address_text">Strada Smolean, nr. 46, Bălți, Republica Moldova</p>
+          </div>
+        </a>
+
+        <a class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1 no-underline text-inherit cursor-pointer" href="mailto:office@darion-nord.md">
+          <div class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_email_label">Email</h4>
+            <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300">office@darion-nord.md</p>
+          </div>
+        </a>
+
+        <a class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1 no-underline text-inherit cursor-pointer" href="tel:+37369570971">
+          <div class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_phone_label">Telefon</h4>
+            <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300">+373 69 570 971</p>
+          </div>
+        </a>
+
+        <div class="flex gap-4 items-start p-5 rounded-xl bg-white/5 border border-white/[0.08] transition-all duration-300 hover:bg-white/[0.08] hover:translate-x-1">
+          <div class="flex items-center justify-center rounded-lg w-11 h-11 bg-accent/15 shrink-0 text-accent">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div class="relative schedule-wrapper">
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_schedule_label">Program</h4>
+            <p class="schedule-toggle cursor-pointer inline-flex items-center gap-1.5 text-[0.95rem] text-white/80 transition-colors duration-300 hover:text-accent" data-i18n="contact_schedule_text">
+              Luni - Vineri: 08:00 - 17:00
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </p>
+            <div class="schedule-popup">
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_mon">Luni</span><span class="font-semibold text-accent">08:00 – 17:00</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_tue">Marți</span><span class="font-semibold text-accent">08:00 – 17:00</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_wed">Miercuri</span><span class="font-semibold text-accent">08:00 – 17:00</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_thu">Joi</span><span class="font-semibold text-accent">08:00 – 17:00</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_fri">Vineri</span><span class="font-semibold text-accent">08:00 – 17:00</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70 border-b border-white/5"><span data-i18n="sched_sat">Sâmbătă</span><span class="font-semibold text-red-500" data-i18n="sched_closed">Închis</span></div>
+              <div class="flex justify-between py-1.5 text-sm text-white/70"><span data-i18n="sched_sun">Duminică</span><span class="font-semibold text-red-500" data-i18n="sched_closed">Închis</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form bg-white p-9 max-md:p-6 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] flex flex-col animate-on-scroll" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="142f25b4-b508-44a8-847d-5bb31cd1f445" />
+        <input type="hidden" name="subject" value="Mesaj nou de pe site - DARION-NORD" />
+        <input type="hidden" name="from_name" value="DARION-NORD Website" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="mb-4">
+            <label for="name" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_name_label">Numele tău</label>
+            <input type="text" id="name" name="name" placeholder="ex: Ion Popescu" data-i18n-placeholder="form_name_placeholder" required class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_email_label">Email</label>
+            <input type="email" id="email" name="email" placeholder="ex: ion@email.com" data-i18n-placeholder="form_email_placeholder" required class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="mb-4">
+            <label for="phone" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_phone_label">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="ex: +373 69 570 971" data-i18n-placeholder="form_phone_placeholder" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
+          </div>
+          <div class="mb-4">
+            <label for="service" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_service_label">Serviciul dorit</label>
+            <select id="service" name="service" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)]">
+              <option value="" data-i18n="form_service_default">Selectează...</option>
+              <option value="civil" data-i18n="form_service_civil">Construcții Civile</option>
+              <option value="metalice" data-i18n="form_service_metal">Construcții Metalice</option>
+              <option value="materiale" data-i18n="form_service_materials">Materiale de Construcție</option>
+              <option value="inginerie" data-i18n="form_service_engineering">Inginerie Structurală</option>
+              <option value="altele" data-i18n="form_service_other">Altele</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 mb-4">
+          <label for="message" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_message_label">Detalii despre proiect</label>
+          <textarea id="message" name="message" placeholder="Descrie pe scurt proiectul tău..." data-i18n-placeholder="form_message_placeholder" rows="5" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400 flex-1 min-h-[80px]"></textarea>
+        </div>
+        <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-4 font-bold text-base rounded-lg transition-all duration-300 border-none cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]">
+          <span data-i18n="form_submit">Trimite Mesaj</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0a1020] text-white/60 pt-[60px]">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-10 max-md:gap-[30px] pb-10 border-b border-white/[0.08]">
+      <div>
+        <div class="flex items-center font-extrabold text-[1.15rem] text-white tracking-tight gap-2.5 mb-4">
+          <img src="/assets/logo1.png" alt="Logo Darion-Nord" class="h-9" />
+          <span>DARION-NORD</span>
+        </div>
+        <p class="text-sm leading-[1.7] text-white/50" data-i18n="footer_desc">Construcții profesionale și soluții complete pentru proiectul tău în Republica Moldova.</p>
+      </div>
+      <div>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_services_heading">Servicii</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_1">Construcții Civile</a></li>
+          <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_2">Construcții Metalice</a></li>
+          <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_3">Materiale de Construcție</a></li>
+          <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_4">Inginerie Structurală</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_company_heading">Companie</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a href="#despre" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_1">Despre Noi</a></li>
+          <li><a href="#proces" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_2">Cum Lucrăm</a></li>
+          <li><a href="#proiecte" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_3">Proiecte</a></li>
+          <li><a href="#contact" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_4">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_quick_contact">Contact Rapid</h4>
+        <ul class="flex flex-col gap-3">
+          <li class="flex items-center gap-2.5 text-[0.88rem] text-white/50">
+            <svg class="text-accent shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+37369570971" class="transition-all duration-300 text-white/50 hover:text-accent">+373 69 570 971</a>
+          </li>
+          <li class="flex items-center gap-2.5 text-[0.88rem] text-white/50">
+            <svg class="text-accent shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:office@darion-nord.md" class="transition-all duration-300 text-white/50 hover:text-accent">office@darion-nord.md</a>
+          </li>
+          <li class="flex items-center gap-2.5 text-[0.88rem] text-white/50">
+            <svg class="text-accent shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <a href="https://maps.app.goo.gl/BkEHVjeLKKb91jHb7" target="_blank" rel="noopener noreferrer" class="transition-all duration-300 text-white/50 hover:text-accent" data-i18n="contact_address_text">Strada Smolean, nr. 46, Bălți, Republica Moldova</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center py-5 text-[0.82rem] text-white/30">
+      <p>&copy; <span id="currentYear"></span> S.C. DARION-NORD S.R.L. <span data-i18n="footer_copyright">drepturile rezervate.</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Mascot -->
+<input type="checkbox" id="mascot-toggle" class="mascot-checkbox" />
+<div class="mascot-container">
+  <div class="mascot-bubble">
+    <p class="m-0 text-sm font-semibold leading-relaxed text-primary">
+      <span data-i18n="mascot_text">👷 Salut! Ai nevoie de o construcție solidă? Suntem aici!</span>
+    </p>
+  </div>
+  <label for="mascot-toggle" class="mascot-figure-label">
+    <img src="/assets/mascot.png" alt="Mascota Darion-Nord — Muncitor constructor" class="mascot-figure" />
+  </label>
+</div>
+
+<!-- Mobile sticky CTA -->
+<div class="mobile-sticky-cta md:hidden fixed bottom-0 inset-x-0 z-[998] bg-white/95 backdrop-blur-[10px] border-t border-slate-200 p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
+  <a href="#contact" class="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-accent to-accent-dark text-primary font-bold text-[0.95rem] py-3.5 rounded-xl shadow-[0_4px_15px_rgba(240,185,11,0.3)] active:scale-[0.98] transition-transform duration-150">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <span data-i18n="mobile_cta_text">Solicită Ofertă Gratuită</span>
+  </a>
+</div>
+
+<script>
+  // Current year
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector((this as HTMLAnchorElement).getAttribute('href')!);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.getElementById('navMenu')?.classList.remove('active');
+        document.getElementById('hamburger')?.classList.remove('active');
+      }
+    });
+  });
+
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu?.classList.toggle('active');
+  });
+
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar?.classList.add('scrolled');
+    } else {
+      navbar?.classList.remove('scrolled');
+    }
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach((section) => {
+      const sectionTop = (section as HTMLElement).offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id') || '';
+      }
+    });
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // Contact form
+  const contactForm = document.querySelector('.contact-form') as HTMLFormElement;
+  contactForm?.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const originalHTML = btn.innerHTML;
+    const t = (key: string, fallback: string) =>
+      typeof (window as any).I18n !== 'undefined' ? (window as any).I18n.t(key) : fallback;
+
+    btn.textContent = t('form_sending', 'Se trimite...');
+    btn.disabled = true;
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(contactForm),
+      });
+      const data = await response.json();
+      if (data.success) {
+        btn.textContent = t('form_success', 'Mesaj trimis cu succes!');
+        contactForm.reset();
+        setTimeout(() => { btn.innerHTML = originalHTML; btn.disabled = false; }, 3000);
+      } else {
+        btn.textContent = t('form_error', 'Eroare. Încearcă din nou.');
+        setTimeout(() => { btn.innerHTML = originalHTML; btn.disabled = false; }, 3000);
+      }
+    } catch {
+      btn.textContent = t('form_error', 'Eroare. Încearcă din nou.');
+      setTimeout(() => { btn.innerHTML = originalHTML; btn.disabled = false; }, 3000);
+    }
+  });
+
+  // Schedule toggle
+  const scheduleToggle = document.querySelector('.schedule-toggle');
+  const scheduleWrapper = document.querySelector('.schedule-wrapper');
+  scheduleToggle?.addEventListener('click', () => scheduleWrapper?.classList.toggle('active'));
+  document.addEventListener('click', (e) => {
+    if (!scheduleWrapper?.contains(e.target as Node)) scheduleWrapper?.classList.remove('active');
+  });
+</script>

@@ -5,12 +5,21 @@ import Despre from '../components/Despre.astro';
 import Servicii from '../components/Servicii.astro';
 import Proces from '../components/Proces.astro';
 import Avantaje from '../components/Avantaje.astro';
+import Testimoniale from '../components/Testimoniale.astro';
+import Contact from '../components/Contact.astro';
+import { readFileSync } from 'fs';
+import matter from 'gray-matter';
+
+const homeFile = readFileSync('./content/home/index.md', 'utf-8');
+const { data: homeData } = matter(homeFile);
 ---
 
 <Layout title="S.C. DARION-NORD S.R.L. - Construcții și Materiale">
-  <Hero />
+  <Hero data={homeData} />
   <Despre />
   <Servicii />
   <Proces />
   <Avantaje />
+  <Testimoniale />
+  <Contact />
 </Layout>
