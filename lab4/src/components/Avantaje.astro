@@ -1,0 +1,107 @@
+---
+// Avantaje.astro
+---
+
+<section id="avantaje" class="py-[100px] max-md:py-[60px] bg-bg-alt">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="text-center mb-[60px] animate-on-scroll">
+      <span
+        class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+        data-i18n="adv_badge"
+        >De ce noi</span
+      >
+      <h2
+        class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+        data-i18n="adv_title"
+      >
+        Avantajele Noastre
+      </h2>
+      <p
+        class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+        data-i18n="adv_sub"
+      >
+        Ce ne face diferiți
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6">
+      <!-- Advantage 1 -->
+      <div class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-3 md:col-span-1 animate-on-scroll" style="--delay: 0s">
+        <div class="absolute inset-0 advantage-bg-1"></div>
+        <div class="relative flex flex-col justify-end h-full p-8 advantage-overlay">
+          <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n="adv_1_title">Calitate Garantată</h3>
+          <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n="adv_1_desc">Materiale certificate și tehnici moderne pentru durabilitate maximă</p>
+        </div>
+      </div>
+
+      <!-- Advantage 2 -->
+      <div class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-3 md:col-span-1 animate-on-scroll" style="--delay: 0.1s">
+        <div class="absolute inset-0 advantage-bg-2"></div>
+        <div class="relative flex flex-col justify-end h-full p-8 advantage-overlay">
+          <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n="adv_2_title">Logistică Proprie</h3>
+          <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n="adv_2_desc">Depozite și transport propriu în Bălți</p>
+        </div>
+      </div>
+
+      <!-- Advantage 3 -->
+      <div class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll" style="--delay: 0.2s">
+        <div class="absolute inset-0 advantage-bg-3"></div>
+        <div class="relative flex flex-col justify-end h-full p-8 advantage-overlay">
+          <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+          <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n="adv_3_title">Soluții Personalizate</h3>
+          <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n="adv_3_desc">Adaptăm fiecare proiect la nevoile tale</p>
+        </div>
+      </div>
+
+      <!-- Advantage 4 -->
+      <div class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll" style="--delay: 0.3s">
+        <div class="absolute inset-0 advantage-bg-4"></div>
+        <div class="relative flex flex-col justify-end h-full p-8 advantage-overlay">
+          <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n="adv_4_title">Acoperire Națională</h3>
+          <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n="adv_4_desc">Servicii în toată Moldova din hub-ul Bălți</p>
+        </div>
+      </div>
+
+      <!-- Advantage 5 -->
+      <div class="group relative rounded-2xl overflow-hidden h-[320px] max-md:h-[300px] transition-all duration-300 shadow-[0_4px_14px_rgba(0,0,0,0.08)] lg:col-span-2 md:col-span-1 animate-on-scroll" style="--delay: 0.4s">
+        <div class="absolute inset-0 advantage-bg-5"></div>
+        <div class="relative flex flex-col justify-end h-full p-8 advantage-overlay">
+          <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n="adv_5_title">Echipă cu 15+ Ani</h3>
+          <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n="adv_5_desc">Specialiști experimentați în toate domeniile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
