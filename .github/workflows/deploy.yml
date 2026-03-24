@@ -38,7 +38,7 @@ jobs:
         env:
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-          GITHUB_BRANCH: master
+          GITHUB_BRANCH: ${{ github.ref_name }}
 
       - name: Build Astro
         run: npm run build
