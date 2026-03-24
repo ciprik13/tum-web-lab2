@@ -1,0 +1,18 @@
+---
+hero_badge: "Construcții & Inginerie Structurală"
+hero_title_1: "Construcții Profesionale"
+hero_title_2: "și Soluții Complete"
+hero_title_3: "pentru Proiectul Tău"
+hero_desc: "De la logistică proprie și furnizarea materialelor brute, până la proiectarea și execuția sistemelor industriale complexe. Soluții integrate sub standarde tehnice riguroase, cu sediul central în Bălți."
+hero_cta_offer: "Solicită Ofertă"
+hero_cta_services: "Descoperă Serviciile"
+stat_founded: "2007"
+stat_founded_label: "Anul Fondării"
+stat_projects: "200+"
+stat_projects_label: "Proiecte Finalizate"
+stat_clients: "100%"
+stat_clients_label: "Clienți Mulțumiți"
+hero_feat_1: "Depozite proprii în Bălți"
+hero_feat_2: "Echipă cu 15+ ani experiență"
+hero_feat_3: "Soluții complete la cheie"
+---
