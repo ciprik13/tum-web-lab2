@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -42,6 +45,13 @@ jobs:
 
       - name: Build Astro
         run: npm run build
+        working-directory: lab4
+
+      - name: Ensure Tina admin is in artifact
+        run: |
+          mkdir -p dist/admin
+          cp -R public/admin/. dist/admin/
+          test -f dist/admin/index.html
         working-directory: lab4
 
       - name: Upload artifact
