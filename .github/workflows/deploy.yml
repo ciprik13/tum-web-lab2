@@ -32,6 +32,14 @@ jobs:
         run: npm ci
         working-directory: lab4
 
+      - name: Build TinaCMS
+        run: npx tinacms build
+        working-directory: lab4
+        env:
+          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          GITHUB_BRANCH: master
+
       - name: Build Astro
         run: npm run build
         working-directory: lab4
