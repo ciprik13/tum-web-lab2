@@ -10,16 +10,21 @@ import Contact from '../components/Contact.astro';
 import { readFileSync } from 'fs';
 import matter from 'gray-matter';
 
-const homeFile = readFileSync('./content/home/index.md', 'utf-8');
-const { data: homeData } = matter(homeFile);
+const heroData = matter(readFileSync('./content/hero/index.md', 'utf-8')).data;
+const despreData = matter(readFileSync('./content/despre/index.md', 'utf-8')).data;
+const serviciiData = matter(readFileSync('./content/servicii/index.md', 'utf-8')).data;
+const procesData = matter(readFileSync('./content/proces/index.md', 'utf-8')).data;
+const avantajeData = matter(readFileSync('./content/avantaje/index.md', 'utf-8')).data;
+const testimonialeData = matter(readFileSync('./content/testimoniale/index.md', 'utf-8')).data;
+const contactData = matter(readFileSync('./content/contact/index.md', 'utf-8')).data;
 ---
 
 <Layout title="S.C. DARION-NORD S.R.L. - Construcții și Materiale">
-  <Hero data={homeData} />
-  <Despre data={homeData} />
-  <Servicii />
-  <Proces />
-  <Avantaje />
-  <Testimoniale />
-  <Contact />
+  <Hero data={heroData} />
+  <Despre data={despreData} />
+  <Servicii data={serviciiData} />
+  <Proces data={procesData} />
+  <Avantaje data={avantajeData} />
+  <Testimoniale data={testimonialeData} />
+  <Contact data={contactData} />
 </Layout>
