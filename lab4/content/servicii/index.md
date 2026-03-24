@@ -18,7 +18,7 @@ services:
     hidden: false
   - title: Demolări și Pregătire Teren
     desc: 'Curățare, demolare și nivelare pentru șantier'
-    hidden: true
+    hidden: false
 spec_badge: Specializări
 spec_title: Servicii Complete
 spec_sub: Compania noastră oferă o gamă largă de construcții metalice
