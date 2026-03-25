@@ -19,9 +19,9 @@ const ctaBtnCall = data?.cta_btn_call ?? "Suna Acum";
 <section id="proiecte" class="py-[100px] max-md:py-[60px]">
   <div class="max-w-[1200px] mx-auto px-6">
     <div class="text-center mb-[60px] animate-on-scroll">
-      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4">{testimBadge}</span>
-      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]">{testimTitle}</h2>
-      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]">{testimSub}</p>
+      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4" data-i18n="testim_badge">{testimBadge}</span>
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]" data-i18n="testim_title">{testimTitle}</h2>
+      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]" data-i18n="testim_sub">{testimSub}</p>
     </div>
 
     <div class="flex items-center gap-4 max-sm:gap-2.5 relative">
@@ -140,8 +140,8 @@ const ctaBtnCall = data?.cta_btn_call ?? "Suna Acum";
 <section class="py-20 max-md:py-[60px] bg-bg-alt overflow-hidden">
   <div class="max-w-[1200px] mx-auto px-6">
     <div class="text-center mb-[60px] animate-on-scroll">
-      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]">{clientsTitle}</h2>
-      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]">{clientsSub}</p>
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]" data-i18n="clients_title">{clientsTitle}</h2>
+      <p class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]" data-i18n="clients_sub">{clientsSub}</p>
     </div>
     <div class="clients-carousel mt-[50px] overflow-hidden relative">
       <div class="clients-track">
@@ -166,11 +166,11 @@ const ctaBtnCall = data?.cta_btn_call ?? "Suna Acum";
 <!-- CTA Banner -->
 <section class="cta-banner relative overflow-hidden min-h-[500px] flex items-center">
   <div class="relative z-[2] max-w-[1200px] mx-auto px-6 py-[100px]">
-    <h2 class="text-[clamp(2.2rem,4vw,3.2rem)] font-black text-white mb-5 tracking-tight leading-[1.2] text-center animate-on-scroll">{ctaTitle}</h2>
-    <p class="text-[1.2rem] text-white/85 mb-12 max-w-[700px] mx-auto leading-[1.7] text-center animate-on-scroll" style="--delay: 0.1s">{ctaDesc}</p>
+    <h2 class="text-[clamp(2.2rem,4vw,3.2rem)] font-black text-white mb-5 tracking-tight leading-[1.2] text-center animate-on-scroll" data-i18n="cta_title">{ctaTitle}</h2>
+    <p class="text-[1.2rem] text-white/85 mb-12 max-w-[700px] mx-auto leading-[1.7] text-center animate-on-scroll" style="--delay: 0.1s" data-i18n="cta_desc">{ctaDesc}</p>
     <div class="flex gap-5 justify-center flex-wrap mb-[60px] max-md:flex-col max-md:items-stretch animate-on-scroll" style="--delay: 0.2s">
       <a href="#contact" class="inline-flex items-center gap-2.5 bg-gradient-to-br from-accent to-accent-light text-primary px-10 py-[18px] font-bold text-[1.05rem] rounded-lg transition-all duration-300 shadow-[0_4px_20px_rgba(240,185,11,0.3)] hover:shadow-[0_8px_30px_rgba(240,185,11,0.5)] hover:-translate-y-[3px] justify-center">
-        <span>{ctaBtnOffer}</span>
+        <span data-i18n="cta_btn_offer">{ctaBtnOffer}</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
@@ -180,7 +180,7 @@ const ctaBtnCall = data?.cta_btn_call ?? "Suna Acum";
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
         </svg>
-        <span>{ctaBtnCall}</span>
+        <span data-i18n="cta_btn_call">{ctaBtnCall}</span>
       </a>
     </div>
   </div>
