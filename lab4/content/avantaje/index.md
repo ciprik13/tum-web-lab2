@@ -17,6 +17,6 @@ advantages:
     hidden: false
   - title: Echipă cu 15+ Ani
     desc: Specialiști experimentați în toate domeniile
-    hidden: true
+    hidden: false
 ---
 
