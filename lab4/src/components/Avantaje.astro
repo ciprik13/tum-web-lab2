@@ -7,7 +7,13 @@ const sectionTitle = data?.adv_title ?? "Avantajele Noastre";
 const sectionSubtitle = data?.adv_sub ?? "Ce ne face diferiți";
 
 const allAdvantages = Array.isArray(data?.advantages) ? data.advantages : [];
-const visibleAdvantages = allAdvantages.filter((item) => !item?.hidden);
+const visibleAdvantages = allAdvantages
+  .filter((item) => !item?.hidden)
+  .map((item, index) => ({
+    ...item,
+    titleKey: `adv_${index + 1}_title`,
+    descKey: `adv_${index + 1}_desc`,
+  }));
 
 const bgClasses = [
   "advantage-bg-1",
@@ -39,15 +45,18 @@ const iconPaths = [
     <div class="text-center mb-[60px] animate-on-scroll">
       <span
         class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent-dark bg-accent/10 px-4 py-1.5 rounded-full mb-4"
+        data-i18n="adv_badge"
         >{sectionBadge}</span
       >
       <h2
         class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-primary mb-3 tracking-tight leading-[1.2]"
+        data-i18n="adv_title"
       >
         {sectionTitle}
       </h2>
       <p
         class="text-[1.05rem] text-slate-500 max-w-[550px] mx-auto leading-[1.7]"
+        data-i18n="adv_sub"
       >
         {sectionSubtitle}
       </p>
@@ -64,8 +73,8 @@ const iconPaths = [
             <div class="w-[68px] h-[68px] bg-accent/20 backdrop-blur-[10px] rounded-xl flex items-center justify-center text-accent mb-5 transition-all duration-300 border border-accent/30 group-hover:bg-accent group-hover:text-primary group-hover:scale-105 group-hover:shadow-[0_6px_20px_rgba(240,185,11,0.4)]">
               <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" set:html={iconPaths[index % iconPaths.length]}></svg>
             </div>
-            <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]">{item?.title}</h3>
-            <p class="text-[0.95rem] text-white/85 leading-[1.7]">{item?.desc}</p>
+            <h3 class="text-[1.4rem] font-extrabold text-white mb-2.5 leading-[1.3]" data-i18n={item.titleKey}>{item?.title}</h3>
+            <p class="text-[0.95rem] text-white/85 leading-[1.7]" data-i18n={item.descKey}>{item?.desc}</p>
           </div>
         </div>
       ))}
