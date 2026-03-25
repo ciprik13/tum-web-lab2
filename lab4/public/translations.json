@@ -8,6 +8,7 @@
     "nav_advantages": "Avantaje",
     "nav_projects": "Proiecte",
     "nav_contact": "Contactează-ne",
+    "nav_menu": "Meniu",
 
     "hero_badge": "Construcții & Inginerie Structurală",
     "hero_title_1": "Construcții Profesionale",
@@ -205,6 +206,7 @@
     "nav_advantages": "Advantages",
     "nav_projects": "Projects",
     "nav_contact": "Contact Us",
+    "nav_menu": "Menu",
 
     "hero_badge": "Construction & Structural Engineering",
     "hero_title_1": "Professional Construction",
@@ -402,6 +404,7 @@
     "nav_advantages": "Преимущества",
     "nav_projects": "Проекты",
     "nav_contact": "Связаться с нами",
+    "nav_menu": "Меню",
 
     "hero_badge": "Строительство и структурная инженерия",
     "hero_title_1": "Профессиональное строительство",
@@ -590,3 +593,4 @@
     "mobile_cta_text": "Запросить бесплатное предложение"
   }
 }
+
