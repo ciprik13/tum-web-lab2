@@ -30,9 +30,9 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
 <section id="contact" class="py-[100px] max-md:py-[60px] bg-primary">
   <div class="max-w-[1200px] mx-auto px-6">
     <div class="text-center mb-[60px] animate-on-scroll">
-      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent bg-accent/15 px-4 py-1.5 rounded-full mb-4">{contactBadge}</span>
-      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-white mb-3 tracking-tight leading-[1.2]">{contactTitle}</h2>
-      <p class="text-[1.05rem] text-white/60 max-w-[550px] mx-auto leading-[1.7]">{contactSub}</p>
+      <span class="inline-block text-[0.8rem] font-bold uppercase tracking-[0.15em] text-accent bg-accent/15 px-4 py-1.5 rounded-full mb-4" data-i18n="contact_badge">{contactBadge}</span>
+      <h2 class="text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold text-white mb-3 tracking-tight leading-[1.2]" data-i18n="contact_title">{contactTitle}</h2>
+      <p class="text-[1.05rem] text-white/60 max-w-[550px] mx-auto leading-[1.7]" data-i18n="contact_sub">{contactSub}</p>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-[50px] items-stretch">
@@ -43,8 +43,8 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           </div>
           <div>
-            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider">{contactAddressLabel}</h4>
-            <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300">{contactAddressText}</p>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_address_label">{contactAddressLabel}</h4>
+            <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300" data-i18n="contact_address_text">{contactAddressText}</p>
           </div>
         </a>
 
@@ -53,7 +53,7 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </div>
           <div>
-            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider">{contactEmailLabel}</h4>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_email_label">{contactEmailLabel}</h4>
             <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300">office@darion-nord.md</p>
           </div>
         </a>
@@ -63,7 +63,7 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           </div>
           <div>
-            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider">{contactPhoneLabel}</h4>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_phone_label">{contactPhoneLabel}</h4>
             <p class="text-[0.95rem] text-white/80 hover:text-accent transition-all duration-300">+373 69 570 971</p>
           </div>
         </a>
@@ -73,9 +73,9 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
           </div>
           <div class="relative schedule-wrapper">
-            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider">{contactScheduleLabel}</h4>
+            <h4 class="text-[0.85rem] font-bold text-accent mb-1 uppercase tracking-wider" data-i18n="contact_schedule_label">{contactScheduleLabel}</h4>
             <p class="schedule-toggle cursor-pointer inline-flex items-center gap-1.5 text-[0.95rem] text-white/80 transition-colors duration-300 hover:text-accent">
-              {contactScheduleText}
+              <span data-i18n="contact_schedule_text">{contactScheduleText}</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </p>
             <div class="schedule-popup">
@@ -100,21 +100,21 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div class="mb-4">
-            <label for="name" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5">{formNameLabel}</label>
+            <label for="name" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_name_label">{formNameLabel}</label>
             <input type="text" id="name" name="name" placeholder="ex: Ion Popescu" data-i18n-placeholder="form_name_placeholder" required class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5">{formEmailLabel}</label>
+            <label for="email" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_email_label">{formEmailLabel}</label>
             <input type="email" id="email" name="email" placeholder="ex: ion@email.com" data-i18n-placeholder="form_email_placeholder" required class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
           </div>
         </div>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div class="mb-4">
-            <label for="phone" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5">{formPhoneLabel}</label>
+            <label for="phone" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_phone_label">{formPhoneLabel}</label>
             <input type="tel" id="phone" name="phone" placeholder="ex: +373 69 570 971" data-i18n-placeholder="form_phone_placeholder" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400" />
           </div>
           <div class="mb-4">
-            <label for="service" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5">{formServiceLabel}</label>
+            <label for="service" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_service_label">{formServiceLabel}</label>
             <select id="service" name="service" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)]">
               <option value="" data-i18n="form_service_default">Selectează...</option>
               <option value="civil" data-i18n="form_service_civil">Construcții Civile</option>
@@ -126,11 +126,11 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
           </div>
         </div>
         <div class="flex flex-col flex-1 mb-4">
-          <label for="message" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5">{formMessageLabel}</label>
+          <label for="message" class="block text-[0.85rem] font-semibold text-slate-700 mb-1.5" data-i18n="form_message_label">{formMessageLabel}</label>
           <textarea id="message" name="message" placeholder="Descrie pe scurt proiectul tău..." data-i18n-placeholder="form_message_placeholder" rows="5" class="w-full px-4 py-3 border-[1.5px] border-slate-200 rounded-lg text-[0.92rem] font-inter text-slate-700 bg-white transition-all duration-300 outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(240,185,11,0.15)] placeholder:text-slate-400 flex-1 min-h-[80px]"></textarea>
         </div>
         <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-accent to-accent-dark text-primary px-8 py-4 font-bold text-base rounded-lg transition-all duration-300 border-none cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(240,185,11,0.35)]">
-          <span>{formSubmit}</span>
+          <span data-i18n="form_submit">{formSubmit}</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="22" y1="2" x2="11" y2="13"></line>
             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -149,10 +149,10 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
           <img src="/assets/logo1.png" alt="Logo Darion-Nord" class="h-9" />
           <span>DARION-NORD</span>
         </div>
-        <p class="text-sm leading-[1.7] text-white/50">{footerDesc}</p>
+        <p class="text-sm leading-[1.7] text-white/50" data-i18n="footer_desc">{footerDesc}</p>
       </div>
       <div>
-        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase">{footerServicesHeading}</h4>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_services_heading">{footerServicesHeading}</h4>
         <ul class="flex flex-col gap-2.5">
           <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_1">Construcții Civile</a></li>
           <li><a href="#servicii" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_svc_2">Construcții Metalice</a></li>
@@ -161,7 +161,7 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
         </ul>
       </div>
       <div>
-        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase">{footerCompanyHeading}</h4>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_company_heading">{footerCompanyHeading}</h4>
         <ul class="flex flex-col gap-2.5">
           <li><a href="#despre" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_1">Despre Noi</a></li>
           <li><a href="#proces" class="text-[0.88rem] text-white/50 transition-all duration-300 hover:text-accent hover:translate-x-1 inline-block" data-i18n="footer_comp_2">Cum Lucrăm</a></li>
@@ -170,7 +170,7 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
         </ul>
       </div>
       <div>
-        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase">{footerQuickContact}</h4>
+        <h4 class="mb-5 text-sm font-bold tracking-wider text-white uppercase" data-i18n="footer_quick_contact">{footerQuickContact}</h4>
         <ul class="flex flex-col gap-3">
           <li class="flex items-center gap-2.5 text-[0.88rem] text-white/50">
             <svg class="text-accent shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -188,7 +188,7 @@ const footerCopyright = data?.footer_copyright ?? "Toate drepturile rezervate.";
       </div>
     </div>
     <div class="text-center py-5 text-[0.82rem] text-white/30">
-      <p>&copy; <span id="currentYear"></span> S.C. DARION-NORD S.R.L. <span>{footerCopyright}</span></p>
+      <p>&copy; <span id="currentYear"></span> S.C. DARION-NORD S.R.L. <span data-i18n="footer_copyright">{footerCopyright}</span></p>
     </div>
   </div>
 </footer>
