@@ -5,7 +5,7 @@ adv_sub: Ce ne face diferiți
 advantages:
   - title: Calitate Garantată
     desc: Materiale certificate și tehnici moderne pentru durabilitate maximă
-    hidden: true
+    hidden: false
   - title: Logistică Proprie
     desc: Depozite și transport propriu în Bălți
     hidden: false
